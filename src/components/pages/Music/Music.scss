@@ -1,0 +1,32 @@
+.music {
+  &__spotifybtn {
+    color: #1db954;
+    background: #000;
+
+    font-weight: bold;
+    text-align: center;  
+    font-family: "Montserrat", sans-serif;
+
+    padding: 10px;
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__logo {
+    height: 35px;
+  }
+
+  &__link {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  &__span{
+    margin-left: 10px;
+  }
+}

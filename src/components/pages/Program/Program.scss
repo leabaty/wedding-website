@@ -1,0 +1,99 @@
+.program {
+  &__art-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    &__image {
+      max-width: 80%;
+      margin: 20px;
+    }
+
+    &--mobile {
+      display: none;
+    }
+  }
+
+  &__art {
+    margin: 30px;
+    text-align: center;
+    width: 80%;
+  }
+
+  &__act {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    text-align: left;
+  }
+
+  &__txt {
+    margin-left: 10px;
+    font-family: 'Jost';
+  }
+
+  &__ico {
+    width: 60px;
+  }
+
+  &__aside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 50px;
+    font-size: 1.3rem;
+
+    &__text {
+      font-size: 1.3rem;
+      line-height: 2.5rem;
+    }
+
+    &__img {
+      height: 300px;
+      margin-left: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .about {
+    &__aside {
+      margin: 30px;
+
+      &__text {
+        font-size: 1.2rem;
+        line-height: 2rem;
+      }
+
+      &__img {
+        height: 200px;
+        margin-left: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .about {
+    &__img-container {
+      display: none;
+
+      &--mobile {
+        display: flex;
+      }
+
+      &__image {
+        width: 60%;
+      }
+    }
+
+    &__aside {
+      display: flex;
+      flex-direction: column;
+
+      &__img {
+        margin: 30px;
+      }
+    }
+  }
+}

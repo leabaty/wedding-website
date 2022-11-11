@@ -1,0 +1,42 @@
+.infos {
+}
+
+.acc {
+  &__optn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    &--mobile {
+      display: none;
+    }
+  }
+
+  &__optn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+
+    border: 2px dashed var(--primary);
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin: 30px;
+    width: 45%;
+  }
+
+  &__ico {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .infos {
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .infos {
+  }
+}

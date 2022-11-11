@@ -1,0 +1,443 @@
+// RESET CSS
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+// APP STYLING
+
+:root {
+  --primary: #4f3f33;
+  --secondary: #fce4d0;
+
+  --secondarydarker: #eccfb8;
+  --secondarylighter: #fff5ef;
+}
+
+.app {
+  font-family: "Jost", sans-serif;
+}
+
+p {
+  line-height: 1.8rem;
+}
+
+li {
+  line-height: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: #4f3f33;
+}
+
+section {
+  margin: 4rem 0;
+}
+
+ul{
+  text-align: left;
+  width: 60%;
+}
+
+.page {
+  padding: 40px 0 0;
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Jost", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  &__image {
+    background-image: url("assets/images/background-test.svg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__couple {
+    background-image: url("assets/images/alex-ana.svg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+  }
+
+  &__full {
+    background-color: #fce4d0;
+  }
+}
+
+.title {
+  font-size: 2rem;
+  font-family: "Homemade Apple", cursive;
+  font-weight: 600;
+  color: var(--primary);
+  padding: 20px 0;
+  line-height: 3rem;
+
+  &--medium {
+    font-size: 1.8rem;
+  }
+  &--small {
+    font-size: 1.4rem;
+  }
+  &--nano {
+    font-size: 1rem;
+  }
+}
+
+.undertitle {
+  font-size: 1.5rem;
+  font-family: "Jost", sans-serif;
+  margin: 20px 0;
+}
+
+.text {
+  font-size: 1.1rem;
+  font-family: "Jost", sans-serif;
+  margin: 0 0 15px 0;
+  line-height: 1.7rem;
+  &--astx{
+    font-style: italic;
+    font-size: 0.9rem;
+  }
+}
+
+.bold{
+  font-weight: 500;
+}
+
+.underlined{
+  text-decoration: underline;
+}
+
+hr {
+  width: 40%;
+  margin: 30px auto;
+  border: 1px dashed var(--primary);
+}
+
+strong {
+  font-size: larger;
+}
+
+.category-img{
+  width: 80%;
+  padding: 0 0 40px;
+}
+// FADE IN ANIMATION
+
+.fade-in-from-bottom-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 600ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+
+.fade-in-from-bottom-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.fade-in-from-left-section {
+  opacity: 0;
+  transform: translateX(-20vw);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 600ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+
+.fade-in-from-left-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.fade-in-from-right-section {
+  opacity: 0;
+  transform: translateX(20vw);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 600ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+
+.fade-in-from-right-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.fade-in-from-top-section {
+  opacity: 0;
+  transform: translateY(-20vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 600ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+
+.fade-in-from-top-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.btn {
+  margin: 10px auto;
+  font-family: "Jost", sans-serif;
+  cursor: pointer;
+  border-radius: 5px;
+
+  &--full {
+    background-color: var(--primary);
+    border: var(--secondary) 2px solid;
+    color: var(--secondary);
+
+    &:hover {
+      border: var(--primary) 2px solid;
+      color: var(--primary);
+      background-image: url("assets/images/background-test.svg");
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  &--outlined {
+    background-color: var(--secondary);
+    background-size: cover;
+    background-position: center;
+    border: var(--primary) 2px solid;
+    color: var(--primary);
+
+    &:hover {
+      border: var(--primary) 2px solid;
+      color: var(--primary);
+      background-image: url("assets/images/background-test.svg");
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  &--handwritten {
+    font-family: "Homemade Apple", cursive;
+  }
+
+  &--large {
+    padding: 15px 20px;
+    font-size: 1.3rem;
+  }
+
+  &--medium {
+    padding: 10px 18px;
+    font-size: 1.1rem;
+  }
+
+  &--small {
+    padding: 5px 15px;
+    font-size: 1rem;
+  }
+
+  &--nano {
+    padding: 2px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+
+@media screen and (max-width: 1250px) {
+  .heading {
+    font-size: 1.7em;
+  }
+
+  .heading--medium {
+    font-size: 1.8em;
+  }
+
+  .heading--small {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .btn {
+    &--large {
+      padding: 8px 25px;
+      font-size: 1.1rem;
+    }
+
+    &--medium {
+      padding: 6px 20px;
+      font-size: 1rem;
+    }
+
+    &--small {
+      padding: 4px 18px;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    margin: 2rem 0;
+  }
+
+  .page {
+    padding: 40px 0 0 0;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    max-width: 100%;
+  }
+  .heading {
+    font-size: 1.5em;
+  }
+
+  .text {
+    font-size: 1.1rem;
+    margin: 15px 30px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .btn {
+    &--large {
+      padding: 6px 20px;
+      font-size: 1rem;
+    }
+  }
+}
