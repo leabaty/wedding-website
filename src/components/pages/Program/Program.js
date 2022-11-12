@@ -18,7 +18,7 @@ import FadeInFromBottom from "../../../utils/FadeInFromBottom";
 function Program() {
   return (
     <>
-      <article className="container__full">
+      <article className="container__full" id="program">
         <div className="page">
           <h1 className="title">Au programme</h1>
           <hr className="title-rule" />

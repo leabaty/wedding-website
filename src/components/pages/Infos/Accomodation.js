@@ -7,7 +7,7 @@ export const Accomodation = () => {
   return (
     <>
       {" "}
-        <div className="page">
+        <div className="page" id="accomodation">
           <h1 className="title">Y dormir</h1>
 
           <div className="infos__optn-container">

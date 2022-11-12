@@ -48,6 +48,10 @@
   }
 }
 
+.navbar--hidden {
+display: none;
+}
+
 // STYLING NAVBAR MENU ITEMS
 
 .nav-links {
@@ -116,7 +120,6 @@
   .nav-links {
     padding: 0rem 1.1rem;
   }
-
 }
 
 @media screen and (max-width: 960px) {
@@ -155,13 +158,12 @@
       width: 100%;
       display: flex;
       flex-direction: column;
- }
+    }
 
     &__menu {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-
 
       width: 100%;
       height: 60vh;

@@ -1,30 +1,49 @@
 import React, { useState, useEffect } from "react";
-import { Link as div } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { Scrollchor, easeOutQuad } from "react-scrollchor";
 
 import { FaTimes } from "react-icons/fa";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
-import { RiFacebookBoxLine, RiInstagramLine } from "react-icons/ri";
 
 import "./Navbar.scss";
 
 import logo from "../../assets/images/mandala.svg";
 
-function Navbar() {
+function Navbar(props) {
   const [openedMobileMenu, setOpenMobileMenu] = useState(false);
+  const [visibleNavbar, setVisibleNavbar] = useState(false);
 
-  /* Ca permet d'ouvrir et de fermer le menu avec la petite croix/les bars */
+  // mobile menu
   const handleClick = () => setOpenMobileMenu(!openedMobileMenu);
-
-  /* Quand l'utilisateur a cliqué sur un des liens, cela ferme le menu et présente à nouveau la navbar mobile*/
   const closeMobileMenu = () => setOpenMobileMenu(false);
+
+  // navbar visibility
+  const changeNavbarVisibility = () => {
+    if (window.scrollY >= 80 || location.pathname != "/") {
+      setVisibleNavbar(true);
+    } else {
+      setVisibleNavbar(false);
+    }
+  };
+
+  const location = useLocation();
+
+  window.addEventListener("scroll", changeNavbarVisibility);
+
+  // // react-scrollchor
+  // const defaultAnimate = {
+  //   offset: -80,
+  //   duration: 400,
+  //   easing: easeOutQuad,
+  // };
 
   return (
     <>
-      <nav className="navbar">
+      <nav className={visibleNavbar ? "navbar" : "navbar--hidden"}>
         <div className="navbar__container">
           <div className="mobilemenu__navbar">
             <div className="mobilemenu__logo">
-              <div className="navbar__title" onClick={closeMobileMenu}>
+              <Link to="/" className="navbar__title" onClick={closeMobileMenu}>
                 <p className="navbar__title">Ana</p>
                 <img
                   className="navbar__icon"
@@ -32,7 +51,7 @@ function Navbar() {
                   alt="logo-apsara-yoga"
                 />
                 <p className="navbar__title">Alex</p>
-              </div>
+              </Link>
             </div>
 
             <div className="mobilemenu__button" onClick={handleClick}>
@@ -47,30 +66,33 @@ function Navbar() {
           >
             <ol className="navbar__menu__left">
               <li className="nav-item">
-                <div
+                <Link
+                  to="/#program"
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >
                   Programme
-                </div>
+                </Link>
               </li>
 
               <li className="nav-item">
-                <div
+                <Link
+                  to="/#directions"
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >
                   S'y rendre
-                </div>
+                </Link>
               </li>
 
               <li className="nav-item">
-                <div
+                <Link
+                  to="/#accomodation"
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >
-                 Hébergement
-                </div>
+                  Hébergement
+                </Link>
               </li>
             </ol>
 
@@ -88,35 +110,34 @@ function Navbar() {
 
             <ol className="navbar__menu__right">
               <li className="nav-item">
-                <div
-                  to="/contact"
+                <Link
+                  to="/traditions"
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >
                   Traditions
-                </div>
+                </Link>
               </li>
 
               <li className="nav-item">
-                <div
-                  to="/contact"
+                <Link
+                  to="/#wedding-gifts"
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >
                   Liste de Mariage
-                </div>
+                </Link>
               </li>
 
               <li className="nav-item">
-                <div
-                  to="/contact"
+                <Link
+                  to="/rsvp"
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >
                   RSVP
-                </div>
+                </Link>
               </li>
-
             </ol>
           </div>
         </div>

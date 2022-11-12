@@ -4,7 +4,7 @@ export const Directions = () => {
   return (
     <>
       {" "}
-      <div className="page">
+      <div className="page" id="directions">
         <h1 className="title">Y venir</h1>
 
         <p className="text">
