@@ -1,7 +1,4 @@
 .infos {
-}
-
-.acc {
   &__optn-container {
     display: flex;
     flex-direction: row;
@@ -21,9 +18,12 @@
 
     border: 2px dashed var(--primary);
     border-radius: 10px;
+    // box-shadow: 0.5px 0.5px 10px 1px rgba(0, 0, 0, 0.2);
+    background-color: var(--secondary);
+
     padding: 30px 40px;
-    margin: 30px;
-    width: 45%;
+    margin: 20px;
+    width: 500px;
   }
 
   &__ico {
@@ -31,8 +31,21 @@
   }
 }
 
+.map{
+  width: 400px;
+  padding: 15px;
+}
+
 @media screen and (max-width: 1080px) {
   .infos {
+    &__optn-container {
+      flex-direction: column;
+    }
+
+    &__optn {
+      width: 90%;
+      display: none;
+    }
   }
 }
 

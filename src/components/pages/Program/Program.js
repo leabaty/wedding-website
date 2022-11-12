@@ -25,7 +25,7 @@ function Program() {
 
           <div className="program__art-container">
             <div className="program__art">
-              <h2 className="title title--nano">Vendredi 30 Juillet</h2>
+              <h2 className="undertitle">Vendredi 30 Juillet</h2>
 
               <div className="program__act">
                 <img src={Thirty14} className="program__ico" />
@@ -46,12 +46,10 @@ function Program() {
                 <img src={Thirty20} className="program__ico" />
                 <p className="program__txt">20h - Barbeuc’ party</p>
               </div>
-
-
             </div>
 
             <div className="program__art">
-              <h2 className="title title--nano">Samedi 1er Août</h2>
+              <h2 className="undertitle">Samedi 1er Août</h2>
               <div className="program__act">
                 <img src={First16} className="program__ico" />
                 <p className="program__txt">16h - Cérémonie Laïque</p>
@@ -74,7 +72,7 @@ function Program() {
             </div>
 
             <div className="program__art">
-              <h2 className="title title--nano">Dimanche 2 Août</h2>
+              <h2 className="undertitle">Dimanche 2 Août</h2>
               <div className="program__act">
                 <img src={Second11} className="program__ico" />
                 <p className="program__txt">11h - Brunch comme à la maison</p>

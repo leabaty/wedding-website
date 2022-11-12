@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link as div } from "react-router-dom";
 
 import { FaTimes } from "react-icons/fa";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
@@ -24,7 +24,7 @@ function Navbar() {
         <div className="navbar__container">
           <div className="mobilemenu__navbar">
             <div className="mobilemenu__logo">
-              <Link to="/" className="navbar__title" onClick={closeMobileMenu}>
+              <div className="navbar__title" onClick={closeMobileMenu}>
                 <p className="navbar__title">Ana</p>
                 <img
                   className="navbar__icon"
@@ -32,7 +32,7 @@ function Navbar() {
                   alt="logo-apsara-yoga"
                 />
                 <p className="navbar__title">Alex</p>
-              </Link>
+              </div>
             </div>
 
             <div className="mobilemenu__button" onClick={handleClick}>
@@ -47,38 +47,35 @@ function Navbar() {
           >
             <ol className="navbar__menu__left">
               <li className="nav-item">
-                <Link
-                  to="/a-propos"
+                <div
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >
                   Programme
-                </Link>
+                </div>
               </li>
 
               <li className="nav-item">
-                <Link
-                  to="/retraite"
+                <div
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >
                   S'y rendre
-                </Link>
+                </div>
               </li>
 
               <li className="nav-item">
-                <Link
-                  to="/cours"
+                <div
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >
                  Hébergement
-                </Link>
+                </div>
               </li>
             </ol>
 
             <div className="navbar__menu__center">
-              <Link to="/" className="navbar__title" onClick={closeMobileMenu}>
+              <div to="/" className="navbar__title" onClick={closeMobileMenu}>
                 <p className="navbar__title">Ana</p>
                 <img
                   className="navbar__icon"
@@ -86,38 +83,38 @@ function Navbar() {
                   alt="logo-apsara-yoga"
                 />
                 <p className="navbar__title">Alex</p>
-              </Link>
+              </div>
             </div>
 
             <ol className="navbar__menu__right">
               <li className="nav-item">
-                <Link
+                <div
                   to="/contact"
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >
                   Traditions
-                </Link>
+                </div>
               </li>
 
               <li className="nav-item">
-                <Link
+                <div
                   to="/contact"
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >
                   Liste de Mariage
-                </Link>
+                </div>
               </li>
 
               <li className="nav-item">
-                <Link
+                <div
                   to="/contact"
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >
-                  Contact
-                </Link>
+                  RSVP
+                </div>
               </li>
 
             </ol>

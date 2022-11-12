@@ -3,35 +3,27 @@ import ScrollToTop from "./utils/ScrollToTop";
 
 import "./App.scss";
 
-// DATA
-import retreat from "./data/retreat";
-
 // COMPONENTS
 import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/Footer";
-import PrivacyPolicy from "./components/Footer/Legal/PrivacyPolicy";
-import LegalNotice from "./components/Footer/Legal/LegalNotice";
 
-import Home from "./components/pages/Home/Home";
-import { Home2 } from "./components/pages/Home2/Home2";
+
+import { Home } from "./components/pages/Home/Home";
 import Program from "./components/pages/Program/Program";
 import Infos from "./components/pages/Infos/Infos";
-import Contact from "./components/pages/Contact/Contact";
-
-import NotFound from "./components/pages/NotFound/NotFound";
 import { Music } from "./components/pages/Music/Music";
-import { Directions } from "./components/pages/Infos/Directions";
-import { Accomodation } from "./components/pages/Infos/Accomodation";
+
+
+import Contact from "./components/pages/Contact/Contact";
+import NotFound from "./components/pages/NotFound/NotFound";
+
 
 function App() {
   return (
-    <div className="App">
-      {/* <Home /> */}
-      <Home2 />
+    <div className="app">
+      <Navbar />
+      <Home />
       <Program />
       <Infos />
-      <Directions/>
-      <Accomodation/>
       <Music />
 
       {/* <Router>

@@ -1,9 +1,10 @@
 // NAVBAR ARCHITECTURE
 
 .navbar {
-  // background: var(--primary);
-  height: 80px;
-  position: sticky;
+  width: 100%;
+  background: var(--secondary);
+  height: 70px;
+  position: fixed;
   top: 0;
   z-index: 999;
 
@@ -50,7 +51,7 @@
 // STYLING NAVBAR MENU ITEMS
 
 .nav-links {
-  color: var(--outlined);
+  color: var(--primary);
 
   display: flex;
   align-items: center;
@@ -69,10 +70,11 @@
 .nav-item {
   height: 100%;
   border-bottom: 2px solid transparent;
+  cursor: pointer;
 }
 
 .nav-item:hover {
-  border-bottom: 2px solid var(--outlined);
+  border-bottom: 2px solid var(--primary);
 }
 
 .--social {
@@ -87,7 +89,7 @@
     align-items: center;
     cursor: pointer;
 
-    color: var(--secondary);
+    color: var(--primary);
     font-size: 1.7rem;
     font-family: "Homemade Apple", cursive;
     white-space: nowrap;
