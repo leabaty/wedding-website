@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Infos.scss";
 
-import couple from "../../../assets/images/infos-alex-ana.svg"
+import couple from "../../../assets/images/infos/infos-alex-ana.svg"
 import { Directions } from "./Directions";
 import { Accomodation } from "./Accomodation";
 

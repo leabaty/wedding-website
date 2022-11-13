@@ -1,5 +1,5 @@
 import React from "react";
-import SpotifyLogo from "../../../assets/images/spotify-logo.svg";
+import SpotifyLogo from "../../../assets/images/music/spotify-logo.svg";
 
 import "./Music.scss";
 

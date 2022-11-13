@@ -1,6 +1,6 @@
 import React from "react";
 
-import AlexAna from "../../../assets/images/alex-ana-casual-outlined.svg";
+import AlexAna from "../../../assets/images/home/alex-ana-casual-outlined.svg";
 import Mandala from "../../../assets/images/mandala.svg";
 
 import "./Home.scss";

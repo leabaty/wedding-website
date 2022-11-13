@@ -1,7 +1,7 @@
 import React from "react";
 
-import Opt1 from "../../../assets/images/infos-acc-1.svg";
-import Opt2 from "../../../assets/images/infos-acc-2.svg";
+import Opt1 from "../../../assets/images/infos/infos-acc-1.svg";
+import Opt2 from "../../../assets/images/infos/infos-acc-2.svg";
 
 export const Accomodation = () => {
   return (

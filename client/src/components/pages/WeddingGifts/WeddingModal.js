@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
+import usePatchData from '../../../utils/usePatchData.js'
+
 import "../../Modal/Modal.scss";
 import { IoCloseOutline } from "react-icons/io5";
 
@@ -30,7 +32,7 @@ export default function Modal(props) {
     setFormData({
       ...formData,
       [event.target.name]: value,
-      activity: props.props.id,
+      activity: props.props._id,
     });
   };
 
@@ -45,6 +47,7 @@ export default function Modal(props) {
       };
     });
     sendData();
+    usePatchData("updateGift", props.props._id, formData.amount);
   };
 
   const sendData = () => {

@@ -1,0 +1,20 @@
+{
+  "name": "wedding-website-server",
+  "version": "1.0.0",
+  "description": "The backend to the wedding website of Réhana and Alex",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Léa Baty",
+  "license": "ISC", 
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "mongoose": "^6.6.1",
+    "nodemon": "^2.0.20"
+  }
+}
