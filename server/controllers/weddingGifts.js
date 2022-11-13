@@ -24,7 +24,13 @@ export const updateGift = async (req, res) => {
   if (!mongoose.Types.ObjectId.isValid(id))
     return res.status(404).send(`No gift with id: ${id}`);
 
-  await weddingGifts.findByIdAndUpdate(id, {$inc : {'participants' : 1, 'amount' : amount}}, { new: true });
+  const updatedGift = { amount, _id: id };
+
+  await weddingGifts.findByIdAndUpdate(
+    id,
+    { $inc: { participants: 1, amount: amount } },
+    { new: true }
+  );
 
   res.json(updatedGift);
 };
