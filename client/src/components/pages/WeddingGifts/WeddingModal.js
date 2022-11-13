@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-import usePatchData from '../../../utils/usePatchData.js'
+import usePatchData from "../../../utils/usePatchData.js";
 
 import "../../Modal/Modal.scss";
 import { IoCloseOutline } from "react-icons/io5";
@@ -15,6 +15,9 @@ export default function Modal(props) {
     message: "",
     amount: "",
     activity: "",
+  });
+  const updateParticipation = usePatchData("updateGift", props.props._id, {
+    amount: +formData.amount,
   });
 
   //Modal
@@ -47,7 +50,7 @@ export default function Modal(props) {
       };
     });
     sendData();
-    usePatchData("updateGift", props.props._id, formData.amount);
+    updateParticipation();
   };
 
   const sendData = () => {
@@ -61,7 +64,9 @@ export default function Modal(props) {
         setOpenedModal(false);
       }
     };
+
     document.addEventListener("mousedown", closeModal);
+
     return () => {
       document.removeEventListener("mousedown", closeModal);
     };
