@@ -1,0 +1,147 @@
+[
+  {
+    "id": 1,
+    "tradition": "india",
+    "title": "Le henné, symbole de beauté ",
+    "desc": [
+      "Le mehndi a une signification importante dans les traditions du mariage indien :",
+      "aucun mariage n’est complet sans l’ornement des mains et des pieds de la mariée, jusqu’au coude et sur la moitié inférieure des jambes.",
+      "Le mehndi symbolise la force de l’amour dans le mariage, et la beauté de la mariée. Plus le mehndi est sombre, plus le mariage sera passionné.",
+      " Souvent, le nom de l’époux est caché dans le motif du henné.",
+      "Le mehndi est réalisé la veille de la célébration du mariage lors de « mehndi ki raat », la nuit du henné. "
+    ],
+    "img_url": "https://images.squarespace-cdn.com/content/v1/58a2bd5a3e00be5b97ab4e77/1579357096705-3V22SJ3O41RAH5O3RCGP/DSC_6480.jpg?format=2500w",
+    "img_start": "start"
+  },
+  {
+    "id": 2,
+    "tradition": "india",
+    "title": "L’or, patrimoine intemporel",
+    "desc": [
+      "Les bijoux révèlent de nombreuses choses sur la femme qui les porte. Le nombre et la valeur diffèrent selon l’Etat d’origine et le milieu social ; la dot de la fille est en partie faite de bijoux.",
+      "L’or est vu comme une protection et une purification. La famille du marié en offre généralement à la mariée en guise de patrimoine "
+    ],
+    "img_url": "https://i.ytimg.com/vi/P1YmJOdsvLo/maxresdefault.jpg",
+    "img_start": "end"
+  },
+  {
+    "id": 3,
+    "tradition": "india",
+    "title": "L’ambre et le musc ",
+    "desc": [
+      "Le rituel du parfum consiste à déposer une goutte d’ambre et de musc sur les mains des convives à la fin des repas "
+    ],
+    "img_url": "https://cdn.shopify.com/s/files/1/0282/8425/6353/products/amber-musk_720x.jpg?v=1629766246",
+    "img_start": "start"
+  },
+  {
+    "id": 4,
+    "tradition": "india",
+    "title": "La noix de coco , symbole de vie ",
+    "desc": [
+      "La pureté de l’eau de coco et la blancheur de la pulpe ne peuvent être atteints qu’après avoir brisé la peau coriace. Les couches de fibre et la coque représentent la luxure, la haine et l’avarice.",
+      "La noix de coco est utilisée pour bénir le couple "
+    ],
+    "img_url": "https://i.pinimg.com/originals/a8/69/c8/a869c889f3136576239c10deb2d00723.jpg",
+    "img_start": "end"
+  },
+  {
+    "id": 5,
+    "tradition": "india",
+    "title": "Le safran",
+    "desc": [
+      "La sharbaat, boisson sucrée à base de safran, est distribué aux membres de la famille et aux convives lors des noces."
+    ],
+    "img_url": "https://cdn.masalamonk.com/2020/06/Keshar-Sharbat-Masala-Monk.jpeg",
+    "img_start": "start"
+  },
+  {
+    "id": 6,
+    "tradition": "india",
+    "title": "Les bracelets de verre, charme de sécurité ",
+    "desc": [
+      "Une mariée indienne le jour de son mariage tentera parfois de mettre un bracelet de verre aussi petit que possible ; on pense que des bracelets plus petits symbolisent plus de bonheur pendant la lune de miel et par la suite.",
+      "Les amis ou les soeurs aident souvent la mariée dans cette tâche en glissant le bracelet avec des huiles parfumées. Après le mariage, la femme continue à porter ses bracelets comme un charme de sécurité et de chance pour son mari, et si le bracelet se brise avant la mort du mari, il est considéré comme \nun mauvais présage."
+    ],
+    "img_url": "https://i.pinimg.com/originals/44/76/fe/4476fe4014f67273f144fdfd9ed4c392.jpg",
+    "img_start": "end"
+  },
+  {
+    "id": 7,
+    "tradition": "india",
+    "title": "Le riz sucré",
+    "desc": [
+      "Chaque marié fait manger une cuillère de soundenou à l’autre, puis en fait manger une aux personnes non mariées pour leur partager leur bonne étoile "
+    ],
+    "img_url": "https://flavoursofmykitchen.com/wp-content/uploads/2020/11/MG_8148-2-scaled.jpg",
+    "img_start": "start"
+  },
+  {
+    "id": 8,
+    "tradition": "india",
+    "title": "Le point rouge, le 3ème œil  ",
+    "desc": [
+      "Le bindi rouge au milieu du front, mélange de curcuma et de chaux éteinte, symbolise le 3ème œil de Shiva, dans lequel résident les facultés psychiques.",
+      "Dans l’ancienne société aryenne, un marié dessinait un tilaka (longue marque verticale) sur le front de la mariée pour signifier son nouveau statut. Aujourd’hui, l’utilisation du bindi est un prolongement de cette tradition. "
+    ],
+    "img_url": "https://im.indiatimes.in/media/content/2016/May/1_1462190074.jpg",
+    "img_start": "end"
+  },
+  {
+    "id": 9,
+    "tradition": "india",
+    "title": "La guirlande de fleurs ",
+    "desc": [
+      "Dans la tradition hindou, l’échange de guirlande de fleurs par les mariés représente leur acceptation de l’union, à l’image de la déesse Parvati qui choisit son époux Lord Shiva en lui glissant une guirlande de fleur autour du cou. "
+    ],
+    "img_url": "https://www.theknot.com/tk-media/images/f4570601-a1e6-4802-86fb-ad9e988066fe",
+    "img_start": "start"
+  },
+  {
+    "id": 10,
+    "tradition": "france",
+    "title": "Les alliances",
+    "desc": [
+      "Lorsqu’on décide de s’unir à l’autre, on fait alliance, d’où le port d’un anneau. Celui-ci est glissé à l’annulaire gauche, le doigt où se trouverait la Veine de l’Amour qui relit directement la main au cœur.",
+      "À l’origine les anneaux étaient de fer, ils sont aujourd’hui le plus souvent en or."
+    ],
+    "img_url": "https://www.mariee.fr/wp-content/uploads/2021/04/prix-alliance.png",
+    "img_start": "end"
+  },
+  {
+    "id": 11,
+    "tradition": "france",
+    "title": "Les 4 éléments",
+    "desc": [
+      "La mariée doit avoir en sa possession 4 éléments au moment de se marier : un accessoire ancien, un emprunté, un neuf et un bleu.",
+      "Quelque chose de vieux : le lien familial, son passé.",
+      "Le bleu : symbolise la pureté en référence à la fidélité dans le couple.",
+      "Du neuf : représente la nouvelle vie de la mariée, pleine de réussite.",
+      "Quelque chose de prêté : manifeste le besoin d’être toujours aidée ou entourée, et représente la chance donnés aux futurs mariés à travers un objet emprunté à un être cher comblé par son propre mariage."
+    ],
+    "img_url": "https://budget-mariage.com/wp-content/uploads/2021/03/img-mariage-quelque-chose-de-bleu-690x460.jpg",
+    "img_start": "start"
+  },
+  {
+    "id": 12,
+    "tradition": "france",
+    "title": "Le lancer de bouquet",
+    "desc": [
+      "Cette tradition très ancienne, apparue au XVIème siècle en France, a quelque peu évoluée. Auparavant, c’était les invités masculins qui devaient s’emparer du bouquet, en courant après la mariée ! ",
+      "Désormais, la jeune mariée le lance dos à ses amies. La croyance veut que celle qui l’attrape sera la prochaine à se marier. Cette tradition évolue encore, surprise…"
+    ],
+    "img_url": "https://i2.wp.com/parisesttoutpetit.fr/wp-content/uploads/2019/06/sweet-ice-cream-photography-77036-unsplash.jpg?resize=1020%2C600&amp;ssl=1",
+    "img_start": "end"
+  },
+  {
+    "id": 13,
+    "tradition": "france",
+    "title": "Les dragées",
+    "desc": [
+      "Les amandes symbolisent l’amour éternel, de la fécondité et de la descendance.",
+      "A l’origine de cette tradition, une légende grecque racontant l’histoire d’une femme qui, persuadée à tort que son tendre et cher avec qui elle devait se marier l’avait abandonné, se donna la mort. Ce dernier, qui avait seulement mal estimé son temps de son retour de voyage, arriva 3 mois trop tard.  Touchés par cette tragique histoire d’amour, les Dieux transformèrent alors la jeune femme en amandier fleurissant dès lors que l’homme lui offrit son amour éternel."
+    ],
+    "img_url": "https://www.dragee-damour.fr/img/cms/blog-da/drag%C3%A9es-mariage.jpg",
+    "img_start": "start"
+  }
+]

@@ -49,7 +49,7 @@
 }
 
 .navbar--hidden {
-display: none;
+  display: none;
 }
 
 // STYLING NAVBAR MENU ITEMS
@@ -63,7 +63,7 @@ display: none;
   padding: 0rem 2rem;
   height: 100%;
 
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 350;
   font-size: 0.9rem;
   text-transform: uppercase;
@@ -95,7 +95,7 @@ display: none;
 
     color: var(--primary);
     font-size: 1.7rem;
-    font-family: "Homemade Apple", cursive;
+    font-family: 'Homemade Apple', cursive;
     white-space: nowrap;
     text-decoration: none;
   }
@@ -103,8 +103,7 @@ display: none;
   &__icon {
     margin: 0 1rem 0 0.5rem;
     height: 3rem;
-    filter: invert(99%) sepia(77%) saturate(750%) hue-rotate(298deg)
-      brightness(103%) contrast(95%);
+    filter: invert(99%) sepia(77%) saturate(750%) hue-rotate(298deg) brightness(103%) contrast(95%);
   }
 }
 
@@ -144,7 +143,7 @@ display: none;
     }
 
     &__button {
-      color: var(--secondary);
+      color: var(--primary);
     }
   }
 
@@ -168,14 +167,14 @@ display: none;
       width: 100%;
       height: 60vh;
       position: absolute;
-      top: 80px;
+      top: 70px;
       left: -150%;
       opacity: 1;
       transition: all 0.5s ease;
     }
 
     &__menu.active {
-      background: var(--primary);
+      background: var(--secondary);
 
       left: 0%;
       padding: 0;

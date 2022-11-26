@@ -3,7 +3,7 @@
   width: 60%;
   margin: 20px auto;
   border-radius: 6px;
-  background-image: url("../../assets/images/background-test.svg");
+  background-image: url('../../assets/images/background-test.svg');
   background-size: cover;
   background-position: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -26,6 +26,16 @@
     background-color: rgba(0, 0, 0, 0.5);
   }
 
+  &__overlay--opaque {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1040;
+    background-color: var(--secondary);
+  }
+
   &__wrapper {
     position: fixed;
     top: 0;
@@ -46,14 +56,13 @@
   }
 
   &__input {
-    font-family: "Jost", sans-serif;
+    font-family: 'Jost', sans-serif;
     padding: 5px 10px;
     width: 100%;
     font-size: 18px;
     border-radius: 10px;
     border: none;
   }
-
 }
 .--text {
   width: 100%;

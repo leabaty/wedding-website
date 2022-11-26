@@ -1,40 +1,53 @@
 .article {
   &__container {
-    margin:  0px 30px 45px 30px;
+    margin: 20px auto;
+    width: 60%;
+    border: 2px dashed var(--primary);
+    background-color: var(--secondary);
+    border-radius: 10px;
+    padding: 20px;
   }
 
-  &__row {
+  &__start {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    &__text {
+      text-align: right;
+      margin-left: 40px;
+    }
   }
 
-  &__row-reverse {
+  &__end {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
+    &__text {
+      text-align: left;
+      margin-right: 40px;
+    }
   }
 
   &__col {
-    width: 49%;
+    width: 50%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
 
   &__text-wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 
-  &__heading {
-    margin: 20px 35px;
-    font-size: 1.6em;
+  &__title {
+    margin: 20px 0;
+    font-size: 1.6rem;
   }
 
-  &__text {
-    margin: 20px 35px;
-    font-size: 1.1rem;
-    line-height: 2rem;
+  &__icon {
+    width: 2.5rem;
+    position: relative;
+    bottom: -12px;
   }
 
   &__img-wrapper {
@@ -43,8 +56,8 @@
 }
 
 img {
-  border: none;
-  max-width: 90%;
+  border-radius: 10px;
+  max-width: 70%;
 }
 
 @media screen and (max-width: 1250px) {
@@ -66,7 +79,6 @@ img {
       font-size: 1rem;
       line-height: 1.6rem;
     }
-  
   }
 }
 
