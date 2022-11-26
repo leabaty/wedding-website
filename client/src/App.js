@@ -1,9 +1,12 @@
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./utils/ScrollToTop";
 
+
+
 import "./App.scss";
 
-// COMPONENTS
+//  Components
 import Navbar from "./components/Navbar/Navbar";
 
 import { MainPage } from "./MainPage";

@@ -1,7 +1,7 @@
 .article {
   &__container {
     margin: 20px auto;
-    width: 60%;
+    width: 80%;
     border: 2px dashed var(--primary);
     background-color: var(--secondary);
     border-radius: 10px;
@@ -53,12 +53,14 @@
   &__img-wrapper {
     margin: auto;
   }
+
+  &__img {
+    border-radius: 10px;
+    max-width: 90%;
+  }
 }
 
-img {
-  border-radius: 10px;
-  max-width: 70%;
-}
+
 
 @media screen and (max-width: 1250px) {
   .article {

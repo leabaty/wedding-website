@@ -1,90 +1,95 @@
-import { useRef, useState } from 'react';
+import { useRef, useState } from "react";
+import { useRecoilState } from 'recoil'
+import { showRSVPModal} from "../../../recoil/atoms";
 
-import mandala from '../../../assets/images/mandala.svg';
+import mandala from "../../../assets/images/mandala.svg";
 
-// import './Modal.scss';
-import './RSVP.scss';
-import { IoCloseOutline } from 'react-icons/io5';
+import "./RSVP.scss";
+import { IoCloseOutline } from "react-icons/io5";
 
 export default function RSVPModal() {
   const ref = useRef();
-  const [openedModal, setOpenedModal] = useState(true);
+  const [isOpen, setIsOpen]= useRecoilState(showRSVPModal);
 
   const [isSubmit, setIsSubmit] = useState(false);
-  const [phoneNumber, setPhoneNumber] = useState('');
+  const [secretPIN, setSecretPIN] = useState("");
 
   //form filling
   const handleChange = (e) => {
-    setPhoneNumber(e.target.value);
+    setSecretPIN(e.target.value);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmit(true);
-    sendData();
+    openRSVPForm();
   };
 
-  const sendData = () => {
-    console.log(phoneNumber);
+  const openRSVPForm = () => {
+    console.log(secretPIN);
   };
 
-  // modal operating
   const close = () => {
-    setOpenedModal(false);
-  };
-  const open = (e) => {
-    setOpenedModal(true);
-  };
+    setIsOpen(false)
+  }
 
   return (
     <>
-      {openedModal ? (
-        <div className='modal__overlay--opaque'>
-          <div className='modal__wrapper'>
-            <div className='modal' openedModal={true} ref={ref}>
-              <a className='close' href='/' alt='homepage'>
+      {isOpen ? (
+        <div className="modal__overlay">
+          <div className="modal__wrapper">
+            <div className="modal" ref={ref}>
+              <div className="close" onClick={close}>
                 <IoCloseOutline />
-              </a>
+              </div>
               {!isSubmit ? (
-                <form className='form' onSubmit={handleSubmit}>
-                  <div className='modal__content'>
-                    <div to='/' className='navbar__title'>
-                      <p className='navbar__title'>Ana</p>
-                      <img className='navbar__icon' src={mandala} alt='mandala' />
-                      <p className='navbar__title'>Alex</p>
+                <form className="form" onSubmit={handleSubmit}>
+                  <div className="modal__content">
+                    <div to="/" className="navbar__title">
+                      <p className="navbar__title">Ana</p>
+                      <img
+                        className="navbar__icon"
+                        src={mandala}
+                        alt="mandala"
+                      />
+                      <p className="navbar__title">Alex</p>
                     </div>
 
-                    <p className='text spacey'>
-                      Entrez le code top secret que vous avez reçu dans votre invitation par mail ou
-                      whatsapp, sans majuscules.
+                    <p className="text spacey">
+                      Entrez le code top secret que vous avez reçu dans votre
+                      invitation par mail ou whatsapp, sans majuscules.
                     </p>
 
-                    <div className='modal__element'>
+                    <div className="modal__element">
                       <input
-                        className='modal__input'
-                        placeholder='Phone'
-                        type='text'
-                        name='phone'
+                        className="modal__input"
+                        placeholder="Votre code secret"
+                        type="text"
+                        name="phone"
                         onChange={handleChange}
                       />
                     </div>
-                    <p className='text'>
-                      Allô Houston, on a un souci, ce code ne semble correspondre à rien du tout...
-                      Essaie de {''}
-                      <a className='bold underlined' href='tel:0033667031701'>
-                        contacter Ana {''}
+                    <p className="text">
+                      Allô Houston, on a un souci, ce code ne semble
+                      correspondre à rien du tout... Essaie de {""}
+                      <a className="bold underlined" href="tel:0033667031701">
+                        contacter Ana {""}
                       </a>
                       pour résoudre le problème !
                     </p>
 
-                    <div className='rsvp__modal__buttons'>
-                      <button className='btn btn--outlined btn--small ' onClick={close}>
-                        <a href='/' alt='homepage'>
-                          Revenir en arrière
-                        </a>
+                    <div className="rsvp__modal__buttons">
+                      <button
+                        className="btn btn--outlined btn--small "
+                        onClick={close}
+                      >
+                        Revenir en arrière
                       </button>
 
-                      <button className='btn btn--outlined btn--small ' onClick={close}>
+                      <button
+                        className="btn btn--outlined btn--small "
+                        onClick={close}
+                      >
                         C'est parti !
                       </button>
                     </div>
@@ -92,14 +97,14 @@ export default function RSVPModal() {
                 </form>
               ) : (
                 <>
-                  <p className='text'>Niania</p>
+                  <p className="text">Niania</p>
                 </>
               )}
             </div>
           </div>
         </div>
       ) : (
-        ''
+        ""
       )}
     </>
   );

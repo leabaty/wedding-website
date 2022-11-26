@@ -1,14 +1,13 @@
-import React, { useState } from 'react';
+import React from "react";
 
-import './RSVP.scss';
-import RSVPModal from './RSVPModal';
+import "./RSVP.scss";
 
 export const RSVP = () => {
   return (
     <>
-      <article className='container__image'>
-        <div className='page'>
-          <RSVPModal />
+      <article className="container__image">
+        <div className="page">
+          <p> EH COUCOU</p>
         </div>
       </article>
     </>

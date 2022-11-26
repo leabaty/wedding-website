@@ -3,9 +3,16 @@ import React from "react";
 import AlexAna from "../../../assets/images/home/alex-ana-casual-outlined.svg";
 import Mandala from "../../../assets/images/mandala.svg";
 
+import { useSetRecoilState } from "recoil";
+import { showRSVPModal } from "../../../recoil/atoms";
+
 import "./Home.scss";
 
 export const Home = () => {
+  /* RSVP Modal */
+  const setShowRSVPModal = useSetRecoilState(showRSVPModal);
+  const openModal = () => setShowRSVPModal(true);
+
   return (
     <>
       <section className="container__image--landing">
@@ -17,9 +24,12 @@ export const Home = () => {
             <p className="text home__emphasis">Save the Date</p>
 
             <p className="text home__date">
-              Le <span className="home__quote--desktop__emphasis">1er juillet 2023</span>, nous
-              célébrons tout l’amour que nous avons à offrir, l’un à l’autre
-              bien sûr, mais envers vous surtout !
+              Le{" "}
+              <span className="home__quote--desktop__emphasis">
+                1er juillet 2023
+              </span>
+              , nous célébrons tout l’amour que nous avons à offrir, l’un à
+              l’autre bien sûr, mais envers vous surtout !
             </p>
 
             <div className="home__buttons">
@@ -60,12 +70,12 @@ export const Home = () => {
             </p>
 
             <div className="home__buttons">
-              <a
-                href="https://google.com"
-                className="btn btn--outlined a home__buttons-link bold"
+              <button
+                onClick={openModal}
+                className="btn btn--outlined home__buttons-rsvp bold"
               >
                 RSVP
-              </a>
+              </button>
 
               <a
                 target="_blank"
