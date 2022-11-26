@@ -21,6 +21,6 @@ I loaded it into mongo and made get requests to get the data.
 - My friend can then retrieve all the info on her side easily from the Google Form analysis tool. 
 
 ## 👩🏻‍💻Languages used
-- Front : React, JS 
+- Front : React, Recoil
 - Back : NodeJS, Mongo 
 
