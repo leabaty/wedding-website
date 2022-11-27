@@ -5,7 +5,6 @@ import './WeddingGifts.scss';
 import couple from '../../../assets/images/wedding-gifts/wedding-gifts-couple.svg';
 
 import { WeddingGift } from './WeddingGift';
-import Modal from '../../Modal/Modal';
 
 export const WeddingGifts = () => {
   return (

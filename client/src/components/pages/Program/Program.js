@@ -30,14 +30,14 @@ function Program() {
               <div className="program__act">
                 <img src={Thirty14} className="program__ico" />
                 <p className="program__txt">
-                  14h - Mariage civil & vin d’honneur
+                  14h - Mariage civil & vin d’honneur <span className="text--small">(à Vincennes)</span>
                 </p>
               </div>
 
               <div className="program__act">
                 <img src={Thirty18} className="program__ico" />
                 <p className="program__txt">
-                  18h – déco par les témoins <br />
+                  18h – déco par les témoins <span className="text--small">(à Choue)</span><br />
                   19h – rattrapage déco par la décoratrice
                 </p>
               </div>

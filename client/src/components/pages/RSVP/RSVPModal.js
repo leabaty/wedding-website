@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { useRecoilState } from 'recoil'
 import { showRSVPModal} from "../../../recoil/atoms";
 
@@ -14,7 +14,16 @@ export default function RSVPModal() {
   const [isSubmit, setIsSubmit] = useState(false);
   const [secretPIN, setSecretPIN] = useState("");
 
+  const close = () => {
+    setIsOpen(false)
+  }
+
+
   //form filling
+  const openRSVPForm = () => {
+    console.log(secretPIN);
+  };
+
   const handleChange = (e) => {
     setSecretPIN(e.target.value);
   };
@@ -25,13 +34,19 @@ export default function RSVPModal() {
     openRSVPForm();
   };
 
-  const openRSVPForm = () => {
-    console.log(secretPIN);
-  };
 
-  const close = () => {
-    setIsOpen(false)
-  }
+  // closing when click on overlay
+  useEffect(() => {
+    const closeModal = (e) => {
+      if (isOpen && ref.current && !ref.current.contains(e.target)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", closeModal);
+    return () => {
+      document.removeEventListener("mousedown", closeModal);
+    };
+  }, [isOpen]);
 
   return (
     <>

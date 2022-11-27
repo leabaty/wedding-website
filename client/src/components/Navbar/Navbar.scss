@@ -1,5 +1,4 @@
 // NAVBAR ARCHITECTURE
-
 .navbar {
   width: 100%;
   background: var(--secondary);
@@ -88,6 +87,8 @@
 // STYLING NAVBAR TITLE/LOGO
 
 .navbar {
+  display: block;
+
   &__title {
     display: flex;
     align-items: center;
