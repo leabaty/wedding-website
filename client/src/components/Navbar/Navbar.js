@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 import { FaTimes } from "react-icons/fa";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
@@ -25,15 +26,15 @@ function Navbar() {
   const closeMobileMenu = () => setOpenMobileMenu(false);
 
   /* Visibility */
-  const changeNavbarVisibility = () => {
-    if (window.scrollY >= 80 || location.pathname != "/") {
-      setVisibleNavbar(true);
-    } else {
-      setVisibleNavbar(false);
-    }
-  };
-  const location = useLocation();
-  window.addEventListener("scroll", changeNavbarVisibility);
+  // const changeNavbarVisibility = () => {
+  //   if (window.scrollY >= 80 || location.pathname != "/") {
+  //     setVisibleNavbar(true);
+  //   } else {
+  //     setVisibleNavbar(false);
+  //   }
+  // };
+  // const location = useLocation();
+  // window.addEventListener("scroll", changeNavbarVisibility);
 
 
   return (
@@ -65,38 +66,38 @@ function Navbar() {
           >
             <ol className="navbar__menu__left">
               <li className="nav-item">
-                <Link
+                <HashLink
                   to="/#program"
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >
                   Programme
-                </Link>
+                </HashLink>
               </li>
 
               <li className="nav-item">
-                <Link
+                <HashLink
                   to="/#directions"
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >
                   S'y rendre
-                </Link>
+                </HashLink>
               </li>
 
               <li className="nav-item">
-                <Link
+                <HashLink
                   to="/#accomodation"
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >
                   Hébergement
-                </Link>
+                </HashLink>
               </li>
             </ol>
 
             <div className="navbar__menu__center">
-              <div to="/" className="navbar__title" onClick={closeMobileMenu}>
+              <Link to="/" className="navbar__title" onClick={closeMobileMenu}>
                 <p className="navbar__title">Ana</p>
                 <img
                   className="navbar__icon"
@@ -104,7 +105,7 @@ function Navbar() {
                   alt="logo-apsara-yoga"
                 />
                 <p className="navbar__title">Alex</p>
-              </div>
+              </Link>
             </div>
 
             <ol className="navbar__menu__right">
@@ -119,13 +120,13 @@ function Navbar() {
               </li>
 
               <li className="nav-item">
-                <Link
+                <HashLink
                   to="/#wedding-gifts"
                   className="nav-links"
                   onClick={closeMobileMenu}
                 >
                   Liste de Mariage
-                </Link>
+                </HashLink>
               </li>
 
               <li className="nav-item" onClick={openModal}>

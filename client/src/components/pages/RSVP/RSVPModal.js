@@ -78,21 +78,13 @@ export default function RSVPModal() {
                       pour résoudre le problème !
                     </p>
 
-                    <div className="rsvp__modal__buttons">
-                      <button
-                        className="btn btn--outlined btn--small "
-                        onClick={close}
-                      >
-                        Revenir en arrière
-                      </button>
-
                       <button
                         className="btn btn--outlined btn--small "
                         onClick={close}
                       >
                         C'est parti !
                       </button>
-                    </div>
+                   
                   </div>
                 </form>
               ) : (
