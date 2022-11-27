@@ -66,3 +66,9 @@
   display: block;
   text-align: end;
 }
+
+@media screen and (max-width: 960px) {
+  .modal {
+    width: 80%;
+  }
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 
+import arrowDown from '../../../assets/images/home/arrow-down.svg';
 import AlexAna from '../../../assets/images/home/alex-ana-casual-outlined.svg';
 import Mandala from '../../../assets/images/mandala.svg';
 
@@ -43,6 +44,8 @@ export const HomeMobile = () => {
               </a>
             </div>
           </article>
+
+          {/* <img className='homemobile__arrow-down' src={arrowDown} alt='arrow-down' /> */}
         </div>
       </section>
     </>

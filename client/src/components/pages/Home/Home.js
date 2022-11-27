@@ -8,7 +8,6 @@ import { useViewport } from '../../../utils/useViewport';
 
 export const Home = () => {
   const { width } = useViewport();
-  const breakpoint = 880;
 
-  return width < breakpoint ? <HomeMobile /> : <HomeDesktop />;
+  return width < process.env.REACT_APP_BREAKPOINT ? <HomeMobile /> : <HomeDesktop />;
 };

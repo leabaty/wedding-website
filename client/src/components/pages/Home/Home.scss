@@ -114,6 +114,35 @@
       padding: 0 5px;
     }
   }
+
+  &__arrow-down {
+    width: 12%;
+    position: relative;
+    z-index: 1;
+    top: 15vh;
+    left: 43%;
+
+    -webkit-animation: action 1s infinite alternate;
+    animation: action 1s infinite alternate;
+  }
+
+  @-webkit-keyframes action {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes action {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
 }
 
 @media screen and (max-width: 1500px) {
