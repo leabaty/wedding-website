@@ -29,7 +29,7 @@ function Navbar() {
   const location = useLocation();
 
   const changeNavbarVisibility = () => {
-    if (window.scrollY >= 80 || location.pathname != '/') {
+    if (window.scrollY >= 80 || location.pathname !== '/') {
       setVisibleNavbar(true);
     } else {
       setVisibleNavbar(false);
@@ -71,9 +71,9 @@ function Navbar() {
               </li>
 
               <li className='nav-item'>
-                <HashLink to='/#accomodation' className='nav-links' onClick={closeMobileMenu}>
+                <Link to='/hebergement' className='nav-links' onClick={closeMobileMenu}>
                   Hébergement
-                </HashLink>
+                </Link>
               </li>
             </ol>
 

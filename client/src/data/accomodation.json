@@ -1,0 +1,357 @@
+[
+  {
+    "type": "Chambre d'hôte partenaire",
+    "name": "Les Péchardières",
+    "location": "Choue",
+    "distance": "1",
+    "contact": "Aurore et Louis",
+    "phone": "06 63 15 36 93 ",
+    "mail": "aurore.hell@live.fr",
+    "infos": "Situé idéalement en face d'Alleray. Grandes chambres lit 160 à 65€ Chambre lit 140 à 60€ Chambre avec 2 lit 90 (dont 1 \"enfant\") 50€ pour 1 lit 60€ pour les 2."
+  },
+  {
+    "type": "Gîte",
+    "name": "Saint Agil",
+    "location": "Saint Agil",
+    "distance": "1",
+    "contact": "Jérôme FOURMENTIN",
+    "phone": "06 85 11 61 23",
+    "infos": "2 gîtes"
+  },
+  {
+    "type": "Chambre d'hôte partenaire",
+    "name": "Mme Vedie",
+    "location": "St Agil",
+    "contact": "Solange Vedie",
+    "distance": "1",
+    "phone": "06 36 67 87 99",
+    "mail": "Solange.vedie@orange.fr"
+  },
+  {
+    "type": "Chambre d'hôte partenaire",
+    "name": "\"Le Bateau\"",
+    "location": "4 Les Couvardières 41170 Saint-Agil",
+    "distance": "3",
+    "contact": "M. Eric Gross",
+    "phone": "06 13 68 24 14",
+    "mail": "egross@zenviewstudios.fr",
+    "website": "www.zenviewstudios.fr ",
+    "infos": "3 chambre dont une avec mezzanine. A partir de 50 eu par personne"
+  },
+  {
+    "type": "Gîte",
+    "name": "La Choupardière",
+    "location": "Choue",
+    "distance": "3",
+    "contact": "Cecile Khindria",
+    "phone": "06 76 51 66 92",
+    "website": "www.lachoupardiere.com",
+    "infos": "2 ailes, 18 couchages"
+  },
+  {
+    "type": "Airbnb",
+    "name": "Chalet dans le parc, 4b, plein sud 2h Paris",
+    "location": "Choue",
+    "distance": "3",
+    "website": "https://bit.ly/3yOb3DV",
+    "infos": "3 lits doubles, logement entier : 150€"
+  },
+  {
+    "type": "Airbnb",
+    "name": "Gîte très calme dans le Perche bocager",
+    "location": "Choue",
+    "distance": "3",
+    "website": "https://bit.ly/3MiIlQX",
+    "infos": "2 chambres, logement entier : 100€"
+  },
+  {
+    "type": "Gîte",
+    "name": "Les Gonardières",
+    "location": "Boursay",
+    "distance": "4",
+    "contact": "Mr et Mme Volant",
+    "phone": "06 03 90 38 42",
+    "infos": "Gîte pour 6 personnes de 3 chambres"
+  },
+  {
+    "type": "Gîte",
+    "name": "La Commanderie d'Arville",
+    "location": "Couëtron-au-Perche",
+    "distance": "4",
+    "contact": "M. Legrand",
+    "phone": "02 54 80 75 41",
+    "website": "http://www.commanderie-arville.com/hebergement.html",
+    "infos": "92 lits répartis en 23 chambres. 22€ par personne et par nuit. Lits simples uniquement."
+  },
+  {
+    "type": "Gîte",
+    "name": "La maison de Raymond",
+    "location": "Arville / La Fontenelle",
+    "distance": "4",
+    "contact": "Régis Foucault",
+    "phone": "06 38 80 46 60",
+    "infos": "4 couchages: 2 chambres cuisine équipée , salon , salle de Bain..."
+  },
+  {
+    "type": "Chambre d'hôte partenaire",
+    "name": "La Ravaudiere",
+    "location": "Boursay",
+    "distance": "4",
+    "contact": "Mme Letteron",
+    "phone": "02 54 80 80 16",
+    "infos": "1 chambre, 4 lits 65,00 €"
+  },
+  {
+    "type": "Chambre d'hôte partenaire",
+    "name": "La Bucolique",
+    "location": "Boursay",
+    "distance": "4",
+    "contact": "Mme Monique Anne Montbrun",
+    "phone": "06 22 48 19 46",
+    "website": "https://mysquit.wixsite.com/la-bucolique",
+    "infos": "120 euros la nuit pour 4 personnes (+ 20 euros par personne supplémentaire ) 6 personnes max"
+  },
+  {
+    "type": "Airbnb",
+    "name": "Maison de charme La Bucolique à Boursay",
+    "location": "Boursay",
+    "distance": "4",
+    "website": "https://bit.ly/3CF8mqq",
+    "infos": "2 lits double, 2 lits simple, 2 chambres : 170€"
+  },
+  {
+    "type": "Gîte",
+    "name": "La Bucolique 2",
+    "location": "Boursay",
+    "distance": "4",
+    "contact": "Mme Monique Anne MONTBRUN",
+    "phone": "06 22 48 19 46",
+    "infos": "Maison de 70 m2 avec une chambre, un salon, une grande cuisine salle à manger , salle d'eau. de 2 à 4 couchages (canapé-lit) : 80 euros pour 2 personnes 100 euros pour 4 personnes"
+  },
+  {
+    "type": "Gîte",
+    "name": "La Gaudinerie",
+    "location": "Boursay",
+    "distance": "5",
+    "contact": "Colette Aymard",
+    "phone": "0675590269",
+    "mail": "yaelleaymard@gmail.com",
+    "infos": "7 à 9 couchages: 2 chambres: - 1 chambre avec 1 lit double - 1 chambre avec 1 canapé lit, 1 lit simple, 1 lit superposé (2 couchages) - 1 clic-clac dans le salon (2 places) : 120 euros par nuit + 50 € de frais de nettoyage pour le séjour - caution: 300€"
+  },
+  {
+    "type": "Chambre d'hôte partenaire",
+    "name": "Bellevue",
+    "location": "Baillou",
+    "distance": "5",
+    "contact": "Mme Virginie Hamelin",
+    "phone": "06 26 82 74 41",
+    "infos": "2 chambres dont une familiale"
+  },
+  {
+    "type": "Gîte",
+    "name": "Les Souches",
+    "location": "Choue",
+    "distance": "5",
+    "contact": "M et Mme de Saint-Albin",
+    "phone": "06 12 59 54 59",
+    "infos": "1 gite de 5 chambres : 300€"
+  },
+  {
+    "type": "Gîte",
+    "name": "La Fontenelle",
+    "location": "La Fontenelle",
+    "distance": "5",
+    "contact": "Noemie Beauchamp",
+    "phone": "0618707072",
+    "website": "airbnb.com/h/gitefermettelafontenelle",
+    "infos": "85e la nuit pour 4 personnes"
+  },
+  {
+    "type": "Chambre d'hôte partenaire",
+    "name": "Carrefour de l'Ormeau",
+    "location": "Mondoubleau",
+    "distance": "8",
+    "contact": "M. Gaubert et Mme Peyron",
+    "phone": "02 54 80 93 76"
+  },
+  {
+    "type": "Hôtel",
+    "name": "Hôtel Le Grand Monarque",
+    "location": "Mondoubleau",
+    "distance": "8",
+    "phone": "02 54 89 92 44"
+  },
+  {
+    "type": "Airbnb",
+    "name": "Maison 2 Chambres à la campagne",
+    "location": "Couetron-au-Perche",
+    "distance": "8",
+    "website": "https://bit.ly/3VgYuuq",
+    "infos": "2 lits double, 2 chambres : 80€"
+  },
+  {
+    "type": "Gîte",
+    "name": "Launay",
+    "location": "Le Gault du Perche",
+    "distance": "8",
+    "contact": "Mme Cécile Moerman",
+    "phone": "06 12 29 24 96",
+    "infos": "2 gites pour 8 personnes. Grand gîte : 50 euros - Petit gîte : 38 euros"
+  },
+  {
+    "type": "Gîte",
+    "name": "La Maison du Jardin",
+    "location": "Le Gault du Perche",
+    "distance": "8",
+    "contact": "Arnauld et Marie Pierre de Laforcade",
+    "phone": "06 52 55 73 82",
+    "infos": "5 personnes Hébergement rural individuel"
+  },
+  {
+    "type": "Airbnb",
+    "name": "Gîte du Grand Monarque",
+    "location": "Montdoubleau",
+    "distance": "8",
+    "website": "https://bit.ly/3fMwZIF",
+    "infos": "1 lit double, 1 canapé convertible, 1 lit simple, logement entier : 135€"
+  },
+  {
+    "type": "Gîte",
+    "name": "Bois Bercy GITES41@wanadoo.fr",
+    "location": "La chapelle Vicomtesse",
+    "distance": "10",
+    "contact": "Service de réservation",
+    "phone": "02 54 58 81 64",
+    "infos": "3 chambres pour 6 personnes 340,00 la semaine"
+  },
+  {
+    "type": "Gîte",
+    "name": "La Métairie",
+    "location": "Le Plessis Dorin",
+    "distance": "11",
+    "contact": "Mme Malcor",
+    "phone": "06 87 46 23 33",
+    "infos": "10 personnes, 4 chambres : 500€"
+  },
+  {
+    "type": "Gîte",
+    "name": "Le Presbytère",
+    "location": "Le Plessis Dorin",
+    "distance": "11",
+    "contact": "Mme Malcor",
+    "phone": "06 87 46 23 33",
+    "infos": "5 chambres, capacité 12 lits : 600,00€ le weekend"
+  },
+  {
+    "type": "Gîte",
+    "name": "Domaine de Boisvinet",
+    "location": "Le Plessis Dorin",
+    "distance": "11",
+    "contact": "Mme Stéphanie Bacquez",
+    "phone": "02 54 89 72 14 ",
+    "mail": "hebergement@domainedeboisvinet.fr",
+    "infos": "5 gites et des chambres d'hôtes : 40€ La chambre et  145€ le gite"
+  },
+  {
+    "type": "Gîte",
+    "name": "Gîte des Étangs de Beaulieu",
+    "location": "Le Plessis-Dorin",
+    "distance": "11",
+    "contact": "M. Pierre-Alexandre Béguin",
+    "phone": "0670463066",
+    "mail": "Gitedesetangsdebeaulieu@gmail.com",
+    "website": "www.gitedesetangsdebeaulieu.fr",
+    "infos": "1 gîte de 3 chambres pour 7 personnes. 1 gîte de 3 chambres pour 6 personnes. Gite de groupe: 5 chambres de deux personnes. 1 dortoir de 14 personnes. Gîtes: A partir de 55€ la nuit/chambre. Dortoir: 154€/nuit. Chambres: 33/nuit pour 1 ou 2 personnes"
+  },
+  {
+    "type": "Gîte",
+    "name": "Le Pavillon",
+    "location": "Château de Droué 41270 Droué",
+    "distance": "13",
+    "contact": "Madame Bénédicte de Piédoüe",
+    "phone": "06 12 29 43 43",
+    "mail": "piedoue@yahoo.fr",
+    "infos": "1 gite de 2 chambres et 4 chambres"
+  },
+  {
+    "type": "Gîte",
+    "name": "Chaussepot",
+    "location": "Le Poislay",
+    "distance": "13",
+    "contact": "M et Mme de Kiss",
+    "phone": "02 37 98 81 40",
+    "infos": "Gîtes : 510€ le petit et 690€ le grand"
+  },
+  {
+    "type": "Airbnb",
+    "name": "Grande maison entre Perche et Vallée du Loir",
+    "location": "Rahay",
+    "distance": "13",
+    "website": "https://bit.ly/3yrCoeM",
+    "infos": "7 lits, 5 chambres : 240€"
+  },
+  {
+    "type": "Gîte",
+    "name": "Gîte Odeau",
+    "location": "Sargé sur Braye",
+    "distance": "14",
+    "phone": "07 80 50 56 76",
+    "infos": "4 personnes : 48€ par nuit"
+  },
+  {
+    "type": "Gîte",
+    "name": "Le Gravier",
+    "location": "Sargé sur braye",
+    "distance": "14",
+    "contact": "Aurore BRETON",
+    "phone": "01 75 43 81 83 ",
+    "mail": "aurorebreton@hotmail.com ",
+    "website": "https://legravier.fr/",
+    "infos": "6 Chb / 12 couchages : 800 euros les 3 nuits, ou gites de 2 chambres : 45 euros ch. Dble"
+  },
+  {
+    "type": "Chambre d'hôte partenaire",
+    "name": "Les Ganeries",
+    "location": "Sargé-sur-Braye",
+    "distance": "14",
+    "contact": "M et Mme Jeulin",
+    "phone": "02 54 72 78 44",
+    "website": " www.lesganeries.fr",
+    "infos": "4 chambres dont une familiale 50 à 80 euros."
+  },
+  {
+    "type": "Chambre d'hôte partenaire",
+    "name": "La Benardière",
+    "location": "Sargé-sur-Braye",
+    "distance": "14",
+    "contact": "M et Mme Jean-Marc Lasfont",
+    "phone": "06 72 08 54 77",
+    "infos": "53 euros pour 6 pers. 51 euros pour 3 pers"
+  },
+  {
+    "type": "Gîte",
+    "name": "Rue Roger Reboussin n°199",
+    "location": "Sargé-sur-braye",
+    "distance": "14",
+    "contact": "Service de réservation",
+    "phone": "02 54 58 81 64",
+    "infos": "3 chambres pour 5 : 199€ la semaine"
+  },
+  {
+    "type": "Gîte",
+    "name": "Les Grands Champs",
+    "location": "Sargé-sur-braye",
+    "distance": "14",
+    "contact": "Service de réservation",
+    "phone": "02 54 58 81 64",
+    "infos": "2 chambres : 300€ la semaine"
+  },
+  {
+    "type": "Airbnb",
+    "name": "2 chambres avec 2 SDB privative en pleine campagne",
+    "location": "Sargé-sur-Braye",
+    "distance": "14",
+    "website": "https://bit.ly/3Ep8jAb",
+    "infos": "2 lits doubles, chambre privée : 70€"
+  }
+]

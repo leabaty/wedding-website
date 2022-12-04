@@ -47,6 +47,7 @@ export const Directions = () => {
             </div>
             <a
               target='_blank'
+              rel='noreferrer'
               href='https://alleray.fr/home/plan-dacces/'
               className='btn btn--outlined btn--medium a home2__cta-link'
             >
@@ -72,6 +73,7 @@ export const Directions = () => {
 
             <a
               target='_blank'
+              rel='noreferrer'
               href='https://www.sncf-connect.com/'
               className='btn btn--outlined btn--medium a home2__cta-link'
             >

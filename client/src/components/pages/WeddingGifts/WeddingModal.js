@@ -147,11 +147,12 @@ export default function Modal(props) {
                 <>
                   {' '}
                   <p className='text'>Merci pour votre participation. Pour payer en ligne, c'est</p>
-                  <a target='_blank' href='https://www.google.com'>
+                  <a target='_blank' href='https://www.google.com' rel='noreferrer'>
                     <button className='gift__button btn'>Par ici !</button>
                   </a>
                   <p className='text'>
-                    Mais si vous préférez, vous pouvez nous laisser une enveloppe lors de notre mariage.
+                    Mais si vous préférez, vous pouvez nous laisser une enveloppe lors de notre
+                    mariage.
                   </p>
                   <strong className='bold'>Un grand merci !</strong>
                 </>

@@ -1,0 +1,44 @@
+.accomodation {
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__card {
+    width: 25%;
+    margin: 20px;
+    padding: 25px 20px 20px;
+    border: 2px dashed var(--primary);
+    border-radius: 10px;
+    background-color: var(--secondary);
+  }
+  &__type {
+    width: 50px;
+  }
+  &__icon {
+    width: 40px;
+  }
+
+  &__infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  &__name {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .accomodation {
+    &__list {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__card {
+      width: 70%;
+    }
+  }
+}
