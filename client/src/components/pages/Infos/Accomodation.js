@@ -33,10 +33,11 @@ export const Accomodation = () => {
                 </p>
               )}
             </div>
-            <img src={Opt1} className='infos__ico' />
+            <img src={Opt1} className='infos__ico' alt='icon' />
             <a
               target='_blank'
               href='https://commanderie-arville.com/accueil/espaces-hebergement/'
+              rel='noreferrer'
               className='btn btn--outlined btn--medium a home2__cta-link'
             >
               Voir les options
@@ -60,11 +61,12 @@ export const Accomodation = () => {
                 </p>
               )}
             </div>
-            <img src={Opt2} className='infos__ico' />
+            <img src={Opt2} className='infos__ico' alt='icon' />
 
             <a
               target='_blank'
               href='https://alleray.fr/home/hebergement/'
+              rel='noreferrer'
               className='btn btn--outlined btn--medium a home2__cta-link'
             >
               Voir les options

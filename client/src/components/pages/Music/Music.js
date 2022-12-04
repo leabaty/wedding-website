@@ -1,28 +1,27 @@
-import React from "react";
-import SpotifyLogo from "../../../assets/images/music/spotify-logo.svg";
+import React from 'react';
+import SpotifyLogo from '../../../assets/images/music/spotify-logo.svg';
 
-import "./Music.scss";
+import './Music.scss';
 
 export const Music = () => {
   return (
     <>
-      <article className="container__image">
-        <div className="page">
+      <article className='container__image'>
+        <div className='page'>
           <p>
-            Une chanson sur laquelle tu ne peux pas t’empêcher de danser ?
-            Ajoute la directement à notre playlist !
+            Une chanson sur laquelle tu ne peux pas t’empêcher de danser ? Ajoute la directement à
+            notre playlist !
           </p>
 
           <a
-            className="music__link"
-            href="https://open.spotify.com/playlist/4GoIeK5CHSofywVbaBM5JI?si=13e29ca421bc4063&pt=080d1d3d604901ad001ba6bea2d7f98c"
-            target="_blank"
+            className='music__link'
+            href='https://open.spotify.com/playlist/4GoIeK5CHSofywVbaBM5JI?si=13e29ca421bc4063&pt=080d1d3d604901ad001ba6bea2d7f98c'
+            target='_blank'
+            rel='noreferrer'
           >
-            <div className="music__spotifybtn">
-              <img className="music__logo" src={SpotifyLogo} />
-              <span className="music__span">
-                J'ajoute l'ambiance du siècle !
-              </span>
+            <div className='music__spotifybtn'>
+              <img className='music__logo' src={SpotifyLogo} alt='spotify logo' />
+              <span className='music__span'>J'ajoute l'ambiance du siècle !</span>
             </div>
           </a>
         </div>

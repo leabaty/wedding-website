@@ -10,6 +10,15 @@
   border: 2px dashed var(--primary);
   padding: 20px;
 
+  &__title {
+    justify-content: center;
+  }
+
+  &__text {
+    margin: 20px;
+    font-size: 1.1rem;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;

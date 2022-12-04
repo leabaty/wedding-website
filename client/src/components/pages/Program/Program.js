@@ -12,9 +12,6 @@ import First22 from '../../../assets/images/program/1-22.svg';
 import Second11 from '../../../assets/images/program/2-11.svg';
 import Second19 from '../../../assets/images/program/2-19.svg';
 
-import FadeInFromTop from '../../../utils/FadeInFromTop';
-import FadeInFromBottom from '../../../utils/FadeInFromBottom';
-
 export function Program() {
   return (
     <>
@@ -28,7 +25,7 @@ export function Program() {
               <h2 className='undertitle'>Vendredi 30 Juillet</h2>
 
               <div className='program__act'>
-                <img src={Thirty14} className='program__ico' />
+                <img src={Thirty14} className='program__ico' alt='icon' />
                 <p className='program__txt'>
                   14h - Mariage civil & vin d’honneur{' '}
                   <span className='text--small'>(à Vincennes)</span>
@@ -36,7 +33,7 @@ export function Program() {
               </div>
 
               <div className='program__act'>
-                <img src={Thirty18} className='program__ico' />
+                <img src={Thirty18} className='program__ico' alt='icon' />
                 <p className='program__txt'>
                   18h – déco par les témoins <span className='text--small'>(à Choue)</span>
                   <br />
@@ -45,7 +42,7 @@ export function Program() {
               </div>
 
               <div className='program__act'>
-                <img src={Thirty20} className='program__ico' />
+                <img src={Thirty20} className='program__ico' alt='icon' />
                 <p className='program__txt'>20h - Barbeuc’ party</p>
               </div>
             </div>
@@ -53,22 +50,22 @@ export function Program() {
             <div className='program__art'>
               <h2 className='undertitle'>Samedi 1er Août</h2>
               <div className='program__act'>
-                <img src={First16} className='program__ico' />
+                <img src={First16} className='program__ico' alt='icon' />
                 <p className='program__txt'>16h - Cérémonie Laïque</p>
               </div>
 
               <div className='program__act'>
-                <img src={First17} className='program__ico' />
+                <img src={First17} className='program__ico' alt='icon' />
                 <p className='program__txt'>17h - Cocktail & Mehndi part</p>
               </div>
 
               <div className='program__act'>
-                <img src={First20} className='program__ico' />
+                <img src={First20} className='program__ico' alt='icon' />
                 <p className='program__txt'>20h - Diner</p>
               </div>
 
               <div className='program__act'>
-                <img src={First22} className='program__ico' />
+                <img src={First22} className='program__ico' alt='icon' />
                 <p className='program__txt'>22h - Soirée dansante</p>
               </div>
             </div>
@@ -76,12 +73,12 @@ export function Program() {
             <div className='program__art'>
               <h2 className='undertitle'>Dimanche 2 Août</h2>
               <div className='program__act'>
-                <img src={Second11} className='program__ico' />
+                <img src={Second11} className='program__ico' alt='icon' />
                 <p className='program__txt'>11h - Brunch comme à la maison</p>
               </div>
 
               <div className='program__act'>
-                <img src={Second19} className='program__ico' />
+                <img src={Second19} className='program__ico' alt='icon' />
                 <p className='program__txt'>19h - Repos du guerrier</p>
               </div>
             </div>

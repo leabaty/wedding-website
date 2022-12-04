@@ -22,9 +22,9 @@ function TraditionArticle({ props }) {
                     }
                   >
                     {article.tradition === 'india' ? (
-                      <img className='article__icon' src={india} />
+                      <img className='article__icon' src={india} alt='india' />
                     ) : (
-                      <img className='article__icon' src={france} />
+                      <img className='article__icon' src={france} alt='france' />
                     )}
                     {article.title}
                   </h1>
