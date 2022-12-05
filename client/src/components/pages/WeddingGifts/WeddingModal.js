@@ -147,7 +147,11 @@ export default function Modal(props) {
                 <>
                   {' '}
                   <p className='text'>Merci pour votre participation. Pour payer en ligne, c'est</p>
-                  <a target='_blank' href='https://www.google.com' rel='noreferrer'>
+                  <a
+                    target='_blank'
+                    href='https://lydia-app.com/pots?id=42660-mariage-ana-alex'
+                    rel='noreferrer'
+                  >
                     <button className='gift__button btn'>Par ici !</button>
                   </a>
                   <p className='text'>
