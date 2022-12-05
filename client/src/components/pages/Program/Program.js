@@ -22,7 +22,7 @@ export function Program() {
 
           <div className='program__art-container'>
             <div className='program__art'>
-              <h2 className='undertitle'>Vendredi 30 Juillet</h2>
+              <h2 className='undertitle'>Vendredi 30 Juin</h2>
 
               <div className='program__act'>
                 <img src={Thirty14} className='program__ico' alt='icon' />
@@ -48,7 +48,7 @@ export function Program() {
             </div>
 
             <div className='program__art'>
-              <h2 className='undertitle'>Samedi 1er Août</h2>
+              <h2 className='undertitle'>Samedi 1er Juillet</h2>
               <div className='program__act'>
                 <img src={First16} className='program__ico' alt='icon' />
                 <p className='program__txt'>16h - Cérémonie Laïque</p>
@@ -56,7 +56,7 @@ export function Program() {
 
               <div className='program__act'>
                 <img src={First17} className='program__ico' alt='icon' />
-                <p className='program__txt'>17h - Cocktail & Mehndi part</p>
+                <p className='program__txt'>17h - Cocktail & Mehndi party</p>
               </div>
 
               <div className='program__act'>
@@ -71,7 +71,7 @@ export function Program() {
             </div>
 
             <div className='program__art'>
-              <h2 className='undertitle'>Dimanche 2 Août</h2>
+              <h2 className='undertitle'>Dimanche 2 Juillet</h2>
               <div className='program__act'>
                 <img src={Second11} className='program__ico' alt='icon' />
                 <p className='program__txt'>11h - Brunch comme à la maison</p>

@@ -1,4 +1,6 @@
 import { useRef, useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import { useRecoilState } from 'recoil';
 import { showRSVPModal } from '../../../recoil/atoms';
 
@@ -9,6 +11,8 @@ import { IoCloseOutline } from 'react-icons/io5';
 
 export default function RSVPModal() {
   const ref = useRef();
+  const navigate = useNavigate();
+
   const [isOpen, setIsOpen] = useRecoilState(showRSVPModal);
   const [error, setError] = useState(false);
   const [secretCode, setSecretCode] = useState('');
@@ -27,21 +31,24 @@ export default function RSVPModal() {
     setSecretCode(e.target.value);
   };
 
+  const handleRedirect = (form) => {
+    navigate('/rsvp', { state: { form: form } });
+    close();
+  };
+
   const handleSubmit = (e) => {
-    console.log(secretCode);
-    console.log(process.env.REACT_APP_OPTN1);
     e.preventDefault();
     if (secretCode === process.env.REACT_APP_OPTN1) {
-      return console.log(process.env.REACT_APP_FORM1);
+      return handleRedirect(process.env.REACT_APP_FORM1);
     }
     if (secretCode === process.env.REACT_APP_OPTN2) {
-      return console.log(process.env.REACT_APP_FORM2);
+      return handleRedirect(process.env.REACT_APP_FORM2);
     }
     if (secretCode === process.env.REACT_APP_OPTN3) {
-      return console.log(process.env.REACT_APP_FORM3);
+      return handleRedirect(process.env.REACT_APP_FORM3);
     }
     if (secretCode === process.env.REACT_APP_OPTN4) {
-      return console.log(process.env.REACT_APP_FORM4);
+      return handleRedirect(process.env.REACT_APP_FORM4);
     } else {
       return handleError();
     }
