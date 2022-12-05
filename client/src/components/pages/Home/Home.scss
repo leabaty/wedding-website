@@ -9,9 +9,9 @@
     border: 2px dashed var(--primary);
     border-radius: 10px;
 
-    width: 25%;
+    width: 27%;
     position: absolute;
-    top: 100px;
+    top: 80px;
     left: 4vw;
     padding: 40px;
     z-index: 1;
@@ -50,7 +50,7 @@
     flex-direction: column;
     &-link {
       margin: 0 auto 10px 0;
-      padding: 0 15px;
+      padding: 2px 15px;
       font-size: 1rem;
     }
     &-rsvp {
@@ -145,6 +145,19 @@
   }
 }
 
+@media screen and (min-width: 600px) {
+  .homemobile {
+    &__img {
+      &--mandala {
+        position: absolute;
+        top: -60px;
+        left: -60px;
+        width: 50%;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1500px) {
   .home {
     &__quote--desktop {
@@ -153,7 +166,7 @@
       line-height: 1rem;
 
       width: 30%;
-      padding: 30px;
+      padding: 20px;
     }
 
     &__date {
@@ -164,30 +177,15 @@
     &__emphasis {
       font-size: 1.2rem;
     }
-
-    &__buttons {
-      &-link {
-        padding: 15px;
-      }
-    }
   }
 }
 
 @media screen and (max-width: 1040px) {
   .home {
-    &__quote--mobile {
-      background-color: var(--secondary);
-      color: var(--primary);
-      border: 2px dashed var(--primary);
-      border-radius: 10px;
-
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1rem;
-
-      padding: 15px;
-      margin: 0 auto;
-      width: 75%;
+    &__quote {
+      top: 60px;
+      padding: 20px;
+      width: 30%;
     }
 
     &__date {
@@ -197,6 +195,15 @@
 
     &__emphasis {
       font-size: 1.5rem;
+    }
+
+    &__buttons {
+      &-rsvp {
+        padding: 10px;
+      }
+      &-link {
+        display: none;
+      }
     }
   }
 }
