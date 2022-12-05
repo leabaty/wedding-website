@@ -1,12 +1,9 @@
-import axios from "axios";
+import axios from 'axios';
 
 const usePatchData = (URL, id, data) => {
   const patchData = async () => {
     try {
-      const response = await axios.patch(
-        `http://localhost:5000/${URL}/${id}`,
-        data
-      );
+      const response = await axios.patch(`https://alex-and-ana.fly.dev/${URL}/${id}`, data);
       console.log(response);
       console.log(response.data);
     } catch (error) {
