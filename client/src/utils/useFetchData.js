@@ -7,7 +7,7 @@ const useFetchData = (URL) => {
 
   const fetchData = async () => {
     try {
-      const { data: response } = await axios.get(`https://alex-and-ana.fly.dev/${URL}`);
+      const { data: response } = await axios.get(process.env.REACT_APP_SERVER + URL);
       setData(response);
     } catch (error) {
       console.error(error);

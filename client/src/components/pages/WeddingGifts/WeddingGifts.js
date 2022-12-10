@@ -20,7 +20,7 @@ export const WeddingGifts = () => {
               mais notre 2ème plus beau présent serait un épique voyage de noce en Indonésie ! :D
             </span>
           </p>
-          <p className='text'>
+          <div className='text'>
             <h2 className='undertitle'>Pourquoi ce voyage ?</h2>
             <ul>
               <li>
@@ -38,7 +38,7 @@ export const WeddingGifts = () => {
                 mariage, et qu’on aimerait vivre la vie d’ados insouciants une dernière fois
               </li>
             </ul>
-          </p>
+          </div>
 
           <WeddingGift />
         </div>
