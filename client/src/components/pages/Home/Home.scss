@@ -21,15 +21,6 @@
     line-height: 3rem;
   }
 
-  &__date {
-    font-size: 1.3rem;
-    line-height: 2.3rem;
-  }
-
-  &__emphasis {
-    font-size: 1.7rem;
-  }
-
   &__img {
     &--couple {
       position: absolute;
@@ -98,10 +89,6 @@
     text-align: center;
   }
 
-  &__emphasis {
-    font-size: 1.4rem;
-  }
-
   &__buttons {
     display: flex;
     flex-direction: column;
@@ -168,15 +155,6 @@
       width: 30%;
       padding: 20px;
     }
-
-    &__date {
-      font-size: 1rem;
-      line-height: 2rem;
-    }
-
-    &__emphasis {
-      font-size: 1.2rem;
-    }
   }
 }
 
@@ -186,15 +164,6 @@
       top: 60px;
       padding: 20px;
       width: 30%;
-    }
-
-    &__date {
-      font-size: 1.2rem;
-      line-height: 2rem;
-    }
-
-    &__emphasis {
-      font-size: 1.5rem;
     }
 
     &__buttons {

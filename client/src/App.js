@@ -13,6 +13,7 @@ import { Traditions } from './components/pages/Traditions/Traditions';
 import { Accomodations } from './components/pages/Accomodation/Accomodations';
 
 import NotFound from './components/pages/NotFound/NotFound';
+import { WeddingGifts } from './components/pages/WeddingGifts/WeddingGifts';
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
           <Route path='/traditions' element={<Traditions />}></Route>
           <Route path='/hebergement' element={<Accomodations />}></Route>
           <Route path='/rsvp' element={<RSVP />}></Route>
+          <Route path='/liste-de-mariage' element={<WeddingGifts />}>
+            {' '}
+          </Route>
           <Route path='*' element={<NotFound />}></Route>
         </Routes>
       </Router>

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { useViewport } from '../../../utils/useViewport';
+import { Link } from 'react-router-dom';
 
 import Opt1 from '../../../assets/images/infos/infos-acc-1.svg';
 import Opt2 from '../../../assets/images/infos/infos-acc-2.svg';
@@ -20,7 +21,7 @@ export const Accomodation = () => {
               <p className='text'>
                 Si vous êtes jeune et festif, ou jeune et pauvre, ou vieux et festif, vous serez
                 immanquablement séduit par la Commanderie d’Arville, située à 7 min en voiture du
-                mariage, et pouvant infosueillir à un tarif défiant toute concurrence (20 à
+                mariage, et pouvant accueillir à un tarif défiant toute concurrence (20 à
                 25€/pers.)… 106 invités !
               </p>
               {width < process.env.REACT_APP_BREAKPOINT ? (
@@ -63,14 +64,9 @@ export const Accomodation = () => {
             </div>
             <img src={Opt2} className='infos__ico' alt='icon' />
 
-            <a
-              target='_blank'
-              href='https://alleray.fr/home/hebergement/'
-              rel='noreferrer'
-              className='btn btn--outlined btn--medium a home2__cta-link'
-            >
+            <Link to='/hebergement' className='btn btn--outlined btn--medium a home2__cta-link'>
               Voir les options
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -19,8 +19,8 @@ export function Infos() {
         ) : (
           <>
             <div className='page'>
-              <h1 className='title'>Infos Pratiques</h1>
-              <hr className='title-rule' />
+              {/* <h1 className='title'>Infos Pratiques</h1>
+              <hr className='title-rule' /> */}
               <img className='category-img' src={couple} alt='Alex et Ana' />
             </div>
           </>

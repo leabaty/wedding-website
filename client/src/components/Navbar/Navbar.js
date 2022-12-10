@@ -93,9 +93,9 @@ function Navbar() {
               </li>
 
               <li className='nav-item'>
-                <HashLink to='/#wedding-gifts' className='nav-links' onClick={closeMobileMenu}>
+                <Link to='/liste-de-mariage' className='nav-links' onClick={closeMobileMenu}>
                   Liste de Mariage
-                </HashLink>
+                </Link>
               </li>
 
               <li className='nav-item' onClick={openModal}>

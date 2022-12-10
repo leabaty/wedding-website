@@ -146,7 +146,10 @@ export default function Modal(props) {
               ) : (
                 <>
                   {' '}
-                  <p className='text'>Merci pour votre participation. Pour payer en ligne, c'est</p>
+                  <p className='text'>
+                    Merci pour cette attention, ça nous fait tellement plaisir. Pour payer en ligne,
+                    c'est
+                  </p>
                   <a
                     target='_blank'
                     href='https://lydia-app.com/pots?id=42660-mariage-ana-alex'

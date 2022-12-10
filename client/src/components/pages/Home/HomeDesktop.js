@@ -24,16 +24,15 @@ export const HomeDesktop = () => {
             <p className='text home__emphasis'>Cher Invité,</p>
 
             <p className='text'>
-              Si nos différences sont évidentes, nos points communs le sont également : de nos deux
-              cultures, nous héritons un joyeux et permanent besoin de célébrations collectives.
-              Autour d’une bouteille de vin ou d’un thermos de tchai, assis par terre les uns sur
-              les autres ou debout en dansant sur les chaises, nous ne vivons que pour le plaisir
-              des moments partagés avec nos amis et famille, c’est-à-dire vous.
+              Si nos différences sont évidentes, nos points communs le sont aussi : de nos deux
+              cultures, nous héritons d’un besoin de partager des moments entre amis ou en famille.
+              Autour d’un thermos ou d’une bouteille, assis par terre ou accoudés au bar, notre plus
+              grande joie est de vous retrouver.
             </p>
 
-            <p className='text home__date'>
-              Le <span className='home__emphasis'>1er juillet 2023</span>, nous célébrons tout
-              l’amour que nous avons à offrir, l’un à l’autre bien sûr, mais envers vous surtout !
+            <p className='text'>
+              Cet été 2023, nous célébrons notre amour l’un pour l’autre, et tout notre amour pour
+              vous !
             </p>
 
             <div className='home__buttons'>

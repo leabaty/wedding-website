@@ -27,8 +27,8 @@ export function Program() {
               <div className='program__act'>
                 <img src={Thirty14} className='program__ico' alt='icon' />
                 <p className='program__txt'>
-                  14h - Mariage civil & vin d’honneur{' '}
-                  <span className='text--small'>(à Vincennes)</span>
+                  14h - Mariage civil initimiste & vin d’honneur{' '}
+                  {/* <span className='text--small'>(à Vincennes)</span> */}
                 </p>
               </div>
 

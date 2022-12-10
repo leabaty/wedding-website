@@ -12,7 +12,6 @@ export const MainPage = () => {
       <Home />
       <Program />
       <Infos />
-      <WeddingGifts />
       <Music />
     </>
   );

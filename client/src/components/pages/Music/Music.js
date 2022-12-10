@@ -6,7 +6,7 @@ import './Music.scss';
 export const Music = () => {
   return (
     <>
-      <article className='container__image'>
+      <article className='container__full'>
         <div className='page'>
           <p>
             Une chanson sur laquelle tu ne peux pas t’empêcher de danser ? Ajoute la directement à

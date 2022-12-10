@@ -23,8 +23,8 @@ export const HomeMobile = () => {
 
           <article className='homemobile__quote'>
             <p className='text'>
-              Le <span className='homemobile__emphasis'>1er juillet 2023</span>, nous célébrons tout
-              l’amour que nous avons à offrir, l’un à l’autre bien sûr, mais envers vous surtout !
+              Cet été 2023, nous célébrons notre amour l’un pour l’autre, et tout notre amour pour
+              vous !
             </p>
 
             <div className='home__buttons'>
