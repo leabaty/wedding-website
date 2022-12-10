@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 
 import usePatchData from '../../../utils/usePatchData.js';
+import usePostData from '../../../utils/usePostData.js';
 
 import '../../Modal/Modal.scss';
 import { IoCloseOutline } from 'react-icons/io5';
@@ -26,8 +27,6 @@ export default function Modal(props) {
     const regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}$/;
     const regexAmount = /^\d+$/;
 
-    console.log(maxAmount);
-
     if (!value.firstname) {
       errors.firstname = "⚠ Allez, dis-moi comment tu t'appelles";
     }
@@ -50,10 +49,6 @@ export default function Modal(props) {
     }
     return errors;
   };
-
-  const updateParticipation = usePatchData('updateGift', props.props._id, {
-    amount: +formData.amount,
-  });
 
   //Modal
   const close = () => {
@@ -87,16 +82,18 @@ export default function Modal(props) {
     });
   };
 
-  const sendData = () => {
-    setIsSent(true);
-    console.log(formData);
-  };
+  // Axios requests
+  const updateParticipation = usePatchData('updateGift', props.props._id, {
+    amount: +formData.amount,
+  });
+  const saveParticipation = usePostData('saveParticipation', formData);
 
   // if there are no errors and the form is Submit, send it
   useEffect(() => {
     if (Object.keys(formErrors).length === 0 && isSubmit) {
       updateParticipation();
-      sendData();
+      setIsSent(true);
+      saveParticipation();
     }
   }, [formErrors]);
 
