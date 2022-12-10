@@ -21,11 +21,13 @@ export default function Modal(props) {
     activity: '',
   });
 
-  const validate = (value, maxAmount) => {
+  const validate = (value, price, savedAmount) => {
     const errors = {};
 
     const regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}$/;
     const regexAmount = /^\d+$/;
+
+    const maxAmount = price - savedAmount;
 
     if (!value.firstname) {
       errors.firstname = "⚠ Allez, dis-moi comment tu t'appelles";
@@ -46,6 +48,9 @@ export default function Modal(props) {
     }
     if (value.amount > maxAmount) {
       errors.amount = `⚠ Pour atteindre notre but, il ne reste que ${maxAmount} € à compléter !`;
+    }
+    if (value.amount > price) {
+      errors.amount = `⚠ C'est adorable, mais le prix de cette activité est ${price} € !`;
     }
     return errors;
   };
@@ -72,8 +77,7 @@ export default function Modal(props) {
     event.preventDefault();
     setIsSubmit(true);
 
-    const maxAmount = props.props.price - props.props.amount;
-    setFormErrors(validate(formData, maxAmount));
+    setFormErrors(validate(formData, props.props.price, props.props.amount));
 
     setFormData((prevState) => {
       return {
