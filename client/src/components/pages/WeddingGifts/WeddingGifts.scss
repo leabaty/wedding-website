@@ -114,7 +114,7 @@
     background-color: var(--secondary);
     padding: 10px 15px;
     font-size: 1rem;
-    margin: 0;
+    margin: 0 15px;
 
     &:hover {
       background-color: var(--primary);
@@ -136,6 +136,16 @@
       text-align: right;
       border-radius: 50px;
     }
+  }
+
+  // paying options buttons
+  &__buttons {
+    width: 80%;
+    margin: 20px auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 

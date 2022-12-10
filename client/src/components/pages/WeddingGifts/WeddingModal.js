@@ -211,19 +211,24 @@ export default function Modal(props) {
                 <>
                   {' '}
                   <p className='text'>
-                    Merci pour cette attention, ça nous fait tellement plaisir. Pour payer en ligne,
-                    c'est
+                    Merci pour cette attention, ça nous fait tellement plaisir. Pour enregistrer ta
+                    participation, deux options :
                   </p>
-                  <a
-                    target='_blank'
-                    href='https://lydia-app.com/pots?id=42660-mariage-ana-alex'
-                    rel='noreferrer'
-                  >
-                    <button className='gift__button btn'>Par ici !</button>
-                  </a>
+                  <div className='gift__buttons'>
+                    <a
+                      target='_blank'
+                      href='https://lydia-app.com/pots?id=42660-mariage-ana-alex'
+                      rel='noreferrer'
+                    >
+                      <button className='gift__button btn'>Participer en ligne</button>
+                    </a>
+
+                    <button className='gift__button btn' onClick={close}>
+                      Participer le jour du mariage
+                    </button>
+                  </div>
                   <p className='text'>
-                    Mais si vous préférez, vous pouvez nous laisser une enveloppe lors de notre
-                    mariage.
+                    Tu recevras également un mail sous peu afin de garder trace.
                   </p>
                   <strong className='bold'>Un grand merci !</strong>
                 </>
