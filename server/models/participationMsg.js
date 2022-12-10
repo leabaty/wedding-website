@@ -1,12 +1,16 @@
 import mongoose from 'mongoose';
 
-const participationSchema = mongoose.Schema({
+const participationSchema = mongoose.Schema(
+  {
     firstname: String,
     lastname: String,
     message: String,
+    email: String,
     amount: Number,
     gift_id: String,
-}, { collection: 'Participation' })
+  },
+  { collection: 'Participation' }
+);
 
 const Participation = mongoose.model('Participation', participationSchema);
 

@@ -1,17 +1,18 @@
-import express from "express";
+import express from 'express';
 
-import participationMsg from "../models/participationMsg.js";
+import participationMsg from '../models/participationMsg.js';
 
 const router = express.Router();
 
 /** Saves a new participation to a gift */
 export const saveParticipation = async (req, res) => {
-  const { firstname, lastname, message, amount, gift_id } = req.body;
+  const { firstname, lastname, message, email, amount, gift_id } = req.body;
 
   const newParticipation = new participationMsg({
     firstname,
     lastname,
     message,
+    email,
     amount,
     gift_id,
   });
