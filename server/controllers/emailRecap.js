@@ -3,9 +3,7 @@ import hbs from 'nodemailer-express-handlebars';
 
 export const emailRecap = async (req, res) => {
   try {
-    let { data } = req.body;
-    console.log(req.body);
-    console.log(data);
+    let data = req.body;
 
     const transporter = nodemailer.createTransport({
       service: 'gmail',
@@ -30,7 +28,7 @@ export const emailRecap = async (req, res) => {
     let mailOptions = {
       from: process.env.GMAIL_USER,
       to: data.email,
-      subject: 'Merci pour votre participation ! | Alex & Ana 2023',
+      subject: 'Nous te remercions ❣️ ',
       template: 'emailRecap',
       context: {
         firstname: data.firstname,
