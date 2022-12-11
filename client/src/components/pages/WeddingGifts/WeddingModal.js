@@ -22,7 +22,7 @@ export default function Modal(props) {
     email: '',
     message: '',
     amount: '',
-    activity: '',
+    gift: '',
     participationType: '',
   });
 
@@ -74,7 +74,7 @@ export default function Modal(props) {
     setFormData({
       ...formData,
       [event.target.name]: value,
-      activity: props.props._id,
+      activity: props.props.title,
     });
   };
 
@@ -203,13 +203,6 @@ export default function Modal(props) {
                       <p className='form__warning'>{formErrors.amount}</p>
                     </div>
 
-                    {/* <button
-                      className='gift__button btn'
-                      // onClick={}
-                    >
-                      Je participe !
-                    </button> */}
-
                     <div className='gift__buttons'>
                       <button
                         className='gift__button btn'
@@ -240,27 +233,27 @@ export default function Modal(props) {
                     Merci pour cette attention, ça nous fait tellement plaisir.
                   </p>
                   {participationType === 'En ligne' && (
-                    <div>
+                    <p className='text'>
                       Pour participer en ligne, c'est
                       <a
                         target='_blank'
                         href='https://lydia-app.com/pots?id=42660-mariage-ana-alex'
                         rel='noreferrer'
                       >
-                        <button className='gift__button btn'>Par ici !</button>
+                        <button className='gift__button btn'>par ici !</button>
                       </a>
-                    </div>
+                    </p>
                   )}
                   {participationType === 'Le jour du mariage' && (
-                    <div>
+                    <p className='text'>
                       Nous mettrons une "boite à enveloppes" à disposition lors de notre mariage
                       pour recueillir vos participations.
-                    </div>
+                    </p>
                   )}
                   <p className='text'>
-                    Tu recevras également un mail sous peu afin de garder trace.
+                    Tu recevras également un mail sous peu afin de garder trace. Encore une fois :
+                    Un grand merci !
                   </p>
-                  <strong className='bold'>Encore une fois : Un grand merci !</strong>
                 </>
               )}
             </div>
