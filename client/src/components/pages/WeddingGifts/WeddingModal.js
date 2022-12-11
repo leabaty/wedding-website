@@ -6,7 +6,6 @@ import useSendEmail from '../../../utils/useSendEmail.js';
 
 import '../../Modal/Modal.scss';
 import { IoCloseOutline } from 'react-icons/io5';
-import useSendEmail from '../../../utils/useSendEmail.js';
 
 export default function Modal(props) {
   const ref = useRef();
@@ -16,6 +15,7 @@ export default function Modal(props) {
   const [isSent, setIsSent] = useState(false);
 
   const [formErrors, setFormErrors] = useState({});
+  const [participationType, setParticipationType] = useState('');
   const [formData, setFormData] = useState({
     firstname: '',
     lastname: '',
@@ -23,8 +23,8 @@ export default function Modal(props) {
     message: '',
     amount: '',
     activity: '',
+    participationType: '',
   });
-  const [participationType, setParticipationType] = useState('');
 
   const validate = (value, price, savedAmount) => {
     const errors = {};
@@ -87,6 +87,7 @@ export default function Modal(props) {
     setFormData((prevState) => {
       return {
         ...prevState,
+        participationType: participationType,
       };
     });
   };
@@ -97,11 +98,7 @@ export default function Modal(props) {
   });
   const saveParticipation = usePostData('saveParticipation', formData);
 
-  const sendEmail = useSendEmail('emailRecap', {
-    ...formData,
-    gift: props.props.title,
-    type: participationType,
-  });
+  const sendEmail = useSendEmail('sendEmail', formData);
 
   // if there are no errors and the form is Submit, send it
   useEffect(() => {
