@@ -2,15 +2,19 @@ import { useEffect, useRef, useState } from 'react';
 
 import usePatchData from '../../../utils/usePatchData.js';
 import usePostData from '../../../utils/usePostData.js';
+import useSendEmail from '../../../utils/useSendEmail.js';
 
 import '../../Modal/Modal.scss';
 import { IoCloseOutline } from 'react-icons/io5';
+import useSendEmail from '../../../utils/useSendEmail.js';
 
 export default function Modal(props) {
   const ref = useRef();
+  const [openedModal, setOpenedModal] = useState(false);
+
   const [isSubmit, setIsSubmit] = useState(false);
   const [isSent, setIsSent] = useState(false);
-  const [openedModal, setOpenedModal] = useState(false);
+
   const [formErrors, setFormErrors] = useState({});
   const [formData, setFormData] = useState({
     firstname: '',
@@ -20,6 +24,7 @@ export default function Modal(props) {
     amount: '',
     activity: '',
   });
+  const [participationType, setParticipationType] = useState('');
 
   const validate = (value, price, savedAmount) => {
     const errors = {};
@@ -92,12 +97,19 @@ export default function Modal(props) {
   });
   const saveParticipation = usePostData('saveParticipation', formData);
 
+  const sendEmail = useSendEmail('emailRecap', {
+    ...formData,
+    gift: props.props.title,
+    type: participationType,
+  });
+
   // if there are no errors and the form is Submit, send it
   useEffect(() => {
     if (Object.keys(formErrors).length === 0 && isSubmit) {
       updateParticipation();
       setIsSent(true);
       saveParticipation();
+      sendEmail();
     }
   }, [formErrors]);
 
@@ -194,12 +206,28 @@ export default function Modal(props) {
                       <p className='form__warning'>{formErrors.amount}</p>
                     </div>
 
-                    <button
+                    {/* <button
                       className='gift__button btn'
                       // onClick={}
                     >
                       Je participe !
-                    </button>
+                    </button> */}
+
+                    <div className='gift__buttons'>
+                      <button
+                        className='gift__button btn'
+                        onClick={() => setParticipationType('En ligne')}
+                      >
+                        Je participe en ligne
+                      </button>
+
+                      <button
+                        className='gift__button btn'
+                        onClick={() => setParticipationType('Le jour du mariage')}
+                      >
+                        Je participe le jour du mariage
+                      </button>
+                    </div>
                   </div>
 
                   {Object.keys(formErrors).length !== 0 ? (
@@ -212,26 +240,30 @@ export default function Modal(props) {
                 <>
                   {' '}
                   <p className='text'>
-                    Merci pour cette attention, ça nous fait tellement plaisir. Pour enregistrer ta
-                    participation, deux options :
+                    Merci pour cette attention, ça nous fait tellement plaisir.
                   </p>
-                  <div className='gift__buttons'>
-                    <a
-                      target='_blank'
-                      href='https://lydia-app.com/pots?id=42660-mariage-ana-alex'
-                      rel='noreferrer'
-                    >
-                      <button className='gift__button btn'>Participer en ligne</button>
-                    </a>
-
-                    <button className='gift__button btn' onClick={close}>
-                      Participer le jour du mariage
-                    </button>
-                  </div>
+                  {participationType === 'En ligne' && (
+                    <div>
+                      Pour participer en ligne, c'est
+                      <a
+                        target='_blank'
+                        href='https://lydia-app.com/pots?id=42660-mariage-ana-alex'
+                        rel='noreferrer'
+                      >
+                        <button className='gift__button btn'>Par ici !</button>
+                      </a>
+                    </div>
+                  )}
+                  {participationType === 'Le jour du mariage' && (
+                    <div>
+                      Nous mettrons une "boite à enveloppes" à disposition lors de notre mariage
+                      pour recueillir vos participations.
+                    </div>
+                  )}
                   <p className='text'>
                     Tu recevras également un mail sous peu afin de garder trace.
                   </p>
-                  <strong className='bold'>Un grand merci !</strong>
+                  <strong className='bold'>Encore une fois : Un grand merci !</strong>
                 </>
               )}
             </div>
