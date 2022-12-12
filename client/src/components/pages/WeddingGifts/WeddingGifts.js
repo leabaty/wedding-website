@@ -3,6 +3,7 @@ import React from 'react';
 import './WeddingGifts.scss';
 
 import couple from '../../../assets/images/wedding-gifts/wedding-gifts-couple.svg';
+import map from '../../../assets/images/wedding-gifts/honeymoon-map.webp';
 
 import { WeddingGift } from './WeddingGift';
 
@@ -38,6 +39,10 @@ export const WeddingGifts = () => {
                 mariage, et qu’on aimerait vivre la vie d’ados insouciants une dernière fois
               </li>
             </ul>
+          </div>
+
+          <div className='gift__map'>
+            <img className='gift__map__img' src={map} alt='honeymoon map' />
           </div>
 
           <WeddingGift />

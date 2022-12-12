@@ -1,4 +1,13 @@
 .gift {
+  &__map {
+    width: 80%;
+    &__img {
+      width: 100%;
+      border: 2px dashed var(--primary);
+      border-radius: 20px;
+    }
+  }
+
   &__list {
     display: flex;
     flex-direction: row;
@@ -156,6 +165,10 @@
 
 @media screen and (max-width: 600px) {
   .gift {
+    &__map {
+      width: 95%;
+    }
+
     &__buttons {
       flex-direction: column;
     }
