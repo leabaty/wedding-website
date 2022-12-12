@@ -2,7 +2,6 @@ import React from 'react';
 
 import './WeddingGifts.scss';
 
-// import giftIcon from '../../../assets/images/wedding-gifts/wedding-gifts-icon.svg';
 import useFetchData from '../../../utils/useFetchData.js';
 
 import WeddingModal from './WeddingModal.js';
@@ -29,7 +28,6 @@ export const WeddingGift = () => {
                 <div className='gift__cover'>
                   <img className='gift__img' src={gift.img_url} alt={gift.title} />
                   <div className='gift__title'>
-                    {/* <img src={giftIcon} className='gift__icon' /> */}
                     <div className='gift__location-container'>
                       <p className='gift__location'>{gift.location_id}</p>{' '}
                     </div>

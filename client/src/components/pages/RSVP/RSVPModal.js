@@ -28,7 +28,7 @@ export default function RSVPModal() {
   };
 
   const handleChange = (e) => {
-    setSecretCode(e.target.value);
+    setSecretCode(e.target.value.toLowerCase());
   };
 
   const handleRedirect = (form) => {
@@ -88,7 +88,7 @@ export default function RSVPModal() {
                   <div className='modal__content'>
                     <p className='text spacey'>
                       Entrez le code top secret que vous avez reçu dans votre invitation par mail ou
-                      whatsapp, sans majuscules.
+                      whatsapp.
                     </p>
 
                     <div className='modal__element'>
