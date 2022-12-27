@@ -18,7 +18,8 @@ export const WeddingGifts = () => {
           <p className='text'>
             Notre plus beau présent sera bien sûr votre présence, <br />
             <span className='bold'>
-              mais notre 2ème plus beau présent serait un épique voyage de noce en Indonésie ! :D
+              mais notre 2ème plus beau présent serait un épique voyage de noce en Indonésie (Ana’s
+              dream) et Mexique (Alex's dream) ! :D
             </span>
           </p>
           <div className='text'>
@@ -35,8 +36,8 @@ export const WeddingGifts = () => {
                 casquette d’influenceuse #boomer
               </li>
               <li>
-                • Parce qu’on va lancer le chantier bébé, couches & responsabilités juste après le
-                mariage, et qu’on aimerait vivre la vie d’ados insouciants une dernière fois
+                • Parce qu’on va lancer le chantier bébé juste après le mariage, et qu’on aimerait
+                vivre la vie d’ados insouciants une dernière fois
               </li>
             </ul>
           </div>
