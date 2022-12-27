@@ -28,9 +28,10 @@ export const Accomodation = () => {
                 ''
               ) : (
                 <p className='text'>
-                  Alors oui, dans ces conditions, on est plus sur une ambiance bonne franquette et
-                  lits superposés que château et jaccuzzi privatif. N’hésitez pas à consulter le
-                  site pour réserver les chambres adaptées à la taille de votre groupe.
+                  Alors oui, on est plus sur une ambiance bonne franquette et lits superposés que
+                  jaccuzzi privatif. Vous pouvez contacter Ariane (07 63 95 85 25) qui vous
+                  expliquera comment ça se passe et répartira les chambres selon les groupes.
+                  Attention ! Il n’y a que des lits simples.
                 </p>
               )}
             </div>

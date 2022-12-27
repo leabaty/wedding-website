@@ -16,7 +16,7 @@ export const WeddingGifts = () => {
           <hr className='title-rule' />
           <img className='category-img' src={couple} alt='Alex et Ana' />
           <p className='text'>
-            Notre plus beau présent sera bien sûr votre présence,{' '}
+            Notre plus beau présent sera bien sûr votre présence, <br />
             <span className='bold'>
               mais notre 2ème plus beau présent serait un épique voyage de noce en Indonésie ! :D
             </span>

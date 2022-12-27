@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Le sari",
+    "desc": [
+      "Il se compose d’une pièce de tissu de plusieurs mètres entourant un haut et un jupon simple."
+    ],
+    "img_url": "https://i.ibb.co/4VGFcsh/sari.webp"
+  },
+  {
+    "id": 2,
+    "title": "Le penjabi",
+    "desc": ["Plus confortable, le penjabi se compose d’un pantalon et d’une longue tunique. "],
+    "img_url": "https://i.ibb.co/b5R0MzM/punjabi.webp"
+  },
+  {
+    "id": 3,
+    "title": "Le lenhenga",
+    "desc": ["Le lenhenga se compose d’une longue jupe et d’un haut ajusté, souvent court."],
+    "img_url": "https://i.ibb.co/DpbLD7Z/lenhenga.webp"
+  }
+]

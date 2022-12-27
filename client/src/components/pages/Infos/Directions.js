@@ -22,8 +22,8 @@ export const Directions = () => {
               chargées.😉
             </p>
             <p className='text'>
-              Pour maximiser la fiesta, on a réservé un taxi qui vous ramènera dans vos lits tout en
-              douceur*!
+              #libérezsam : les taxis de Noela et Sylvain sont disponibles au 02 54 80 89 44 ou 06
+              08 55 39 91 pour vous ramener tout en douceur* durant la nuit !
             </p>
             <span className='text text--astx'>*Douceur du taxi non contractuelle</span>
           </>
@@ -56,18 +56,16 @@ export const Directions = () => {
           </div>
 
           <div className='infos__optn'>
-            <h2 className='undertitle'>En train Sylvain !</h2>
+            <h2 className='undertitle'>En taxi-train Sylvain !</h2>
 
             <div className='infos__art'>
               <ul>
-                <li>🚂 À 18 min de la gare de COURTALAIN SAINT PELLERIN (2h05 de Paris)</li>
-                <li>🚃 À 20 min de la gare de CLOYES (Paris – Cloyes 1h36)</li>
-                <li>🚅 À 25 min de la gare de VENDOME (Paris-Vendôme, 42 min)</li>
-
-                <p>
-                  Pensez à vous annoncer, on trouvera bien un gentil Dobby pour aller vous chercher
-                  à la gare !
-                </p>
+                <li>🚅 À 25 min de la gare de VENDOME (Paris-Vendôme, 42 min)... </li>
+                <br />
+                <li>
+                  🚕 ...Puis à 30 min en taxi : Noela & Sylvain (02 54 80 89 44 ou 06 08 55 39 91) -
+                  environ 50€ pour se rendre à Choue
+                </li>
               </ul>
             </div>
 

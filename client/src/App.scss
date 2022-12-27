@@ -134,7 +134,7 @@ table {
 
 :root {
   --primary: #4f3f33;
-  --secondary: #fce4d0;
+  --secondary: #f2e8dc;
 
   --secondarydarker: #eccfb8;
   --secondarylighter: #fff5ef;
@@ -197,7 +197,7 @@ ul {
   }
 
   &__full {
-    background-color: #fce4d0;
+    background-color: var(--secondary);
     margin: 0;
     padding: 40px 0;
   }

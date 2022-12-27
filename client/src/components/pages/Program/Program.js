@@ -35,10 +35,10 @@ export function Program() {
               <div className='program__act'>
                 <img src={Thirty18} className='program__ico' alt='icon' />
                 <p className='program__txt'>
-                  18h - déco par les témoins
+                  18h - déco par les témoins (puis rattrapage par la décoratrice)
                   {/* <span className='text--small'>(à Choue)</span> */}
-                  <br />
-                  19h - rattrapage déco par la décoratrice
+                  {/* <br />
+                  19h - rattrapage déco par la décoratrice */}
                 </p>
               </div>
 
@@ -67,7 +67,7 @@ export function Program() {
 
               <div className='program__act'>
                 <img src={First22} className='program__ico' alt='icon' />
-                <p className='program__txt'>22h - Soirée dansante</p>
+                <p className='program__txt'>22h - Party party</p>
               </div>
             </div>
 
