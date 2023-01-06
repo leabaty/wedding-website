@@ -3,9 +3,9 @@ import React from 'react';
 import './WeddingGifts.scss';
 
 import couple from '../../../assets/images/wedding-gifts/wedding-gifts-couple.svg';
-import map from '../../../assets/images/wedding-gifts/honeymoon-map.webp';
 
 import { WeddingGift } from './WeddingGift';
+import { Souvenirs } from '../Souvenirs/Souvenirs';
 
 export const WeddingGifts = () => {
   return (
@@ -42,11 +42,8 @@ export const WeddingGifts = () => {
             </ul>
           </div>
 
-          <div className='gift__map'>
-            <img className='gift__map__img' src={map} alt='honeymoon map' />
-          </div>
-
           <WeddingGift />
+          <Souvenirs />
         </div>
       </article>
     </>
