@@ -5,10 +5,6 @@ import cottage from '../../../assets/images/accomodation/cottage.svg';
 import bnb from '../../../assets/images/accomodation/bnb.svg';
 import hotel from '../../../assets/images/accomodation/hotel.svg';
 
-import bed from '../../../assets/images/accomodation/bed.svg';
-import pax from '../../../assets/images/accomodation/pax.svg';
-import room from '../../../assets/images/accomodation/room.svg';
-
 import website from '../../../assets/images/accomodation/website.svg';
 import email from '../../../assets/images/accomodation/email.svg';
 import phone from '../../../assets/images/accomodation/phone.svg';

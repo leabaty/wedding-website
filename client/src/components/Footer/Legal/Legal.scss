@@ -1,8 +1,12 @@
 .legal {
+  &__page {
+    min-height: 80vh;
+  }
+
   &__section {
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 80%;
     justify-content: space-around;
     margin: 15px auto;
   }
@@ -12,15 +16,25 @@
   }
 
   &__title {
-    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
     text-align: right;
+
     padding-right: 15px;
+    overflow-wrap: anywhere;
   }
 
   &__text {
+    display: flex;
+    align-items: center;
+
     margin: 0;
     text-align: left;
     padding-left: 15px;
+
+    overflow-wrap: anywhere;
   }
 
   &__bullet {
@@ -30,12 +44,21 @@
 
   &__article {
     width: 70%;
-    margin: 50px auto;
     text-align: left;
   }
-
 }
 
 .--border-left {
   border-left: solid 1px black;
+}
+
+@media screen and (max-width: 768px) {
+  .legal {
+    &__article {
+      width: 90%;
+    }
+    &__privacytitle {
+      margin: 0 30px;
+    }
+  }
 }

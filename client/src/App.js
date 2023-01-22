@@ -15,6 +15,10 @@ import { Accomodations } from './components/pages/Accomodation/Accomodations';
 import NotFound from './components/pages/NotFound/NotFound';
 import { WeddingGifts } from './components/pages/WeddingGifts/WeddingGifts';
 
+import Footer from './components/Footer/Footer';
+import LegalNotice from './components/Footer/Legal/LegalNotice';
+import PrivacyPolicy from './components/Footer/Legal/PrivacyPolicy';
+
 function App() {
   return (
     <div className='app'>
@@ -30,7 +34,10 @@ function App() {
             {' '}
           </Route>
           <Route path='*' element={<NotFound />}></Route>
+          <Route path='/politique-de-confidentialite' element={<PrivacyPolicy />}></Route>
+          <Route path='/mentions-legales' element={<LegalNotice />}></Route>
         </Routes>
+        <Footer />
       </Router>
     </div>
   );

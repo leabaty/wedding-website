@@ -13,7 +13,7 @@ import DressesArticle from './DressesArticle';
 export const Traditions = () => {
   return (
     <>
-      <article className='container__image'>
+      <main className='container__image'>
         <div className='page'>
           <h1 className='title'> Traditions </h1>
           <hr className='title-rule' />
@@ -23,7 +23,7 @@ export const Traditions = () => {
           <h1 className='title'> Les tenues </h1>
           <DressesArticle props={dresses} />
         </div>
-      </article>
+      </main>
     </>
   );
 };

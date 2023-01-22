@@ -20,6 +20,34 @@
     width: 30vw;
   }
 
+  &__org {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    border: 2px dashed var(--primary);
+    border-radius: 10px;
+    background-color: var(--secondary);
+
+    padding: 30px 40px;
+    width: 67vw;
+    margin: 20px;
+
+    &__block {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+    &__item {
+      width: 30%;
+      &__img {
+        width: 30%;
+      }
+    }
+  }
+
   &__art {
     text-align: left;
   }
@@ -51,5 +79,21 @@
 
 @media screen and (max-width: 769px) {
   .infos {
+    &__org {
+      &__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      &__item {
+        width: 80%;
+        margin: 5px 0;
+        &__img {
+          width: 20%;
+        }
+      }
+    }
   }
 }
