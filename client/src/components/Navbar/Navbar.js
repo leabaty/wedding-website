@@ -15,7 +15,6 @@ import RSVPModal from '../pages/RSVP/RSVPModal';
 
 function Navbar() {
   const [openedMobileMenu, setOpenMobileMenu] = useState(false);
-  const [visibleNavbar, setVisibleNavbar] = useState(false);
 
   /* RSVP Modal */
   const setShowRSVPModal = useSetRecoilState(showRSVPModal);
@@ -25,22 +24,9 @@ function Navbar() {
   const handleClick = () => setOpenMobileMenu(!openedMobileMenu);
   const closeMobileMenu = () => setOpenMobileMenu(false);
 
-  /* Desktop visibility */
-  const location = useLocation();
-
-  const changeNavbarVisibility = () => {
-    if (window.scrollY >= 80 || location.pathname !== '/') {
-      setVisibleNavbar(true);
-    } else {
-      setVisibleNavbar(false);
-    }
-  };
-
-  window.addEventListener('scroll', changeNavbarVisibility);
-
   return (
     <>
-      <nav className={visibleNavbar ? 'navbar' : 'navbar--hidden'}>
+      <nav className='navbar'>
         <div className='navbar__container'>
           <div className='mobilemenu__navbar'>
             <div className='mobilemenu__logo'>
