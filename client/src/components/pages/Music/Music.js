@@ -16,7 +16,7 @@ export const Music = () => {
           <a
             className='music__link'
             // Updated 06/06
-            href='https://open.spotify.com/playlist/4GoIeK5CHSofywVbaBM5JI?si=d2eb2a502a3e4711&pt=ac46a707d29d10986a94b69fe7f3e61c'
+            href='https://open.spotify.com/playlist/4GoIeK5CHSofywVbaBM5JI?si=0014c1f4c4854adc&pt=6205b646ef6c4a33d89bd118447b0cc1'
             target='_blank'
             rel='noreferrer'
           >
