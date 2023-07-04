@@ -14,6 +14,7 @@ import { Accomodations } from './components/pages/Accomodation/Accomodations';
 
 import NotFound from './components/pages/NotFound/NotFound';
 import { WeddingGifts } from './components/pages/WeddingGifts/WeddingGifts';
+import { GiftBook } from './components/pages/WeddingGifts/GiftBook/GiftBook';
 
 import Footer from './components/Footer/Footer';
 import LegalNotice from './components/Footer/Legal/LegalNotice';
@@ -30,9 +31,9 @@ function App() {
           <Route path='/traditions' element={<Traditions />}></Route>
           <Route path='/hebergement' element={<Accomodations />}></Route>
           <Route path='/rsvp' element={<RSVP />}></Route>
-          <Route path='/liste-de-mariage' element={<WeddingGifts />}>
-            {' '}
-          </Route>
+          <Route path='/liste-de-mariage' element={<WeddingGifts />}></Route>
+          <Route path='/livre-dor' element={<GiftBook />}></Route>
+
           <Route path='*' element={<NotFound />}></Route>
           <Route path='/politique-de-confidentialite' element={<PrivacyPolicy />}></Route>
           <Route path='/mentions-legales' element={<LegalNotice />}></Route>
