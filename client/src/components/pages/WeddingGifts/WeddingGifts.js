@@ -14,6 +14,23 @@ export const WeddingGifts = () => {
         <div className='page'>
           <h1 className='title'>Liste de Mariage</h1>
           <hr className='title-rule' />
+          <p className='bold'>Note du 05 Juillet 2023 : </p>
+          <p>Tout d'abord, mille mercis pour votre présence au plus beau jour de notre vie.</p>
+          <p>
+            Ensuite, deux mille mercis pour vos participations à notre liste de mariage, nous avons
+            hâte de vous partager nos plus beaux souvenirs. Si vous n'avez pas pu participer car des
+            lucky-luke du clic sont passés ici avant vous, voici le lien vers notre cagnotte :
+          </p>
+          <a
+            target='_blank'
+            href='https://lydia-app.com/pots?id=42660-mariage-ana-alex'
+            rel='noreferrer'
+          >
+            <button className='btn--outlined btn--small btn'>C'est par ici !</button>
+          </a>
+
+          <p>Trois mille mercis !</p>
+          <hr className='title-rule' />
           <img className='category-img' src={couple} alt='Alex et Ana' />
           <p className='text'>
             Notre plus beau présent sera bien sûr votre présence, <br />
